@@ -1,0 +1,380 @@
+{
+  "navbar": {
+    "home": "Home",
+    "About Us": {
+      "title": "About Us",
+      "The Story Behind ITSP!": "The Story Behind ITSP!",
+      "Get to Know us!": "Get to Know us!",
+      "Philosophy & Methodology": "Philosophy & Methodology",
+      "Why to choose ITSP Group?": "Why to choose ITSP Group?",
+      "Our Quality Standards": "Our Quality Standards",
+      "Our Dream Team": "Our Dream Team"
+    },
+    "Solutions": {
+      "title": "Solutions",
+      "Software House": "Software House",
+      "Marketing & Business House": "Marketing & Business House",
+      "Digital Marketing House": "Digital Marketing House"
+    },
+    "Careers": "Careers",
+    "Contact Us": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "title-part-1": "Endless Possibilities",
+      "title-part-2": "Endless Impact!",
+      "description": "ITSP is dedicated to helping businesses expand their reach and impact across the globe. We combine cutting-edge software solutions with innovative marketing strategies to bridge language barriers, connect with diverse audiences, and drive international success.",
+      "link": "Get in touch"
+    },
+    "solutions": {
+      "title": "OUR SOLUTIONS CATEGORY",
+      "description": "Expand your horizons with our software and marketing solutions. No boders, just boundless creativity, compliance, and cultural resonance to amplify your message globally and authentically",
+      "software-card": {
+        "title": "Software House",
+        "description": "We “potential” “Empower” “Cultivate” your business with our transformativeSoftware Solutions."
+      },
+      "digital-marketing-card": {
+        "title": "Digital Marketing House",
+        "description": "Unleash Your Brand's Digital Superpowers with ITSP!"
+      },
+      "marketing-business-card": {
+        "title": "Marketing & Business House",
+        "description": "Unleash the full potential of your brand with our marketing magic!"
+      },
+      "link": "Click to learn more"
+    },
+    "world": {
+      "title": "We code & connect you with the world.",
+      "description": "BEYOND BORDERS, BEYOND LIMITS: CONNECTING THE WORLD THROUGH SOFTWARE & DIGITAL MARKETING!THE WORLD IS OUR CANVAS, AND LANGUAGES ARE OUR COLORS. WE'RE NOT JUST A SOFTWARE AND DIGITALMARKETING COMPANY; WE'RE GLOBAL ARCHITECTS, BUILDING BRIDGES ACROSS CULTURES AND CONTINENTS."
+    }
+  },
+  "footer": {
+    "title": "ENDLESS POSSIBILITIES … ENDLESS IMPACT!",
+    "Main Links": "Main Links",
+    "Home": "Home",
+    "About ITSP": "About ITSP",
+    "Contact Us": "Contact Us",
+    "Careers": "Careers",
+    "Quick Links": "Solutions",
+    "Software House": "Software House",
+    "SW1": "Websites",
+    "SW2": "Mobile Applications",
+    "SW3": "Desktop Applications",
+    "SW4": "ERP Systems",
+    "SW5": "CRM Systems",
+    "Marketing & Business House": "Marketing & Business House",
+    "MBH1": "Marketing Consulting and Planning",
+    "MBH2": "Business Consulting and Planning",
+    "MBH3": "Branding and Corporate Identity",
+    "MBH4": "Market Analysis",
+    "MBH5": "Audience Analysis",
+    "MBH6": "Brand Activations",
+    "MBH7": "Public Relations",
+    "Digital Marketing House": "Digital Marketing House",
+    "DMH1": "Performance Management",
+    "DMH2": "Social Media Management",
+    "DMH3": "Content Creation and Development",
+    "DMH4": "Influencers’ Marketing",
+    "DMH5": "Graphic Design",
+    "DMH6": "Photography and Videography",
+    "DMH7": "Video Editing",
+    "DMH8": "Voice Over",
+    "phone": "+20 120 600 2500",
+    "address": "El-Haram, Giza, Egypt 12522",
+    "copyright": "© 2024 — ITSP All Rights Reserved"
+  },
+  "about-us": {
+    "AboutUs-hero": {
+      "title": "The Story Behind",
+      "description": "From that spark, our business took off. We tackled websites, then apps, each project testing the limits of available technology and cultural awareness. We assembled teams of gifted developers, designers, and marketers, with each member contributing a special strength to the whole team."
+    },
+    "aboutCard-1": {
+      "title": "GET TO KNOW US!",
+      "description-1": "From software that seamlessly adapts to local needs to marketing campaigns that resonate across continents, we help businesses bridge the gap and achieve global success. ",
+      "description-2": "Come along on this adventure with us!"
+    },
+    "aboutCard-2": {
+      "title": "Philosophy and Methodology",
+      "philosophy-card": {
+        "title": "Philosophy",
+        "description": "We deliver comprehensive services that encompass the entire spectrum of your software solutions, offering full-cycle support from development to marketing. Acting as the bridge between your technical expertise and commercial realization, we provide targeted marketing campaigns and operational support to propel your software successfully into the market."
+      },
+      "methodology-card": {
+        "title": "Methodology",
+        "description": "We don't just build your idea, we empower it. We provide ongoing support, data-driven insights, and agile adjustments to guarantee your product or service evolves and prospers in the ever-changing market."
+      }
+    },
+    "aboutCard-3": {
+      "title": "Why to choose ITSP?",
+      "description": "Our goal is to enable businesses to bring their ground-breaking ideas to life. We don't just develop software or craft marketing campaigns; we act as trusted partners, taking their idea from inception to commercial success.",
+      "card1": {
+        "title": "Premium Customer Support",
+        "description": "We build trust and foster long-lasting partnerships with our clients. That’s why we offer an immersive customer-experience, designed to be your reliable guide while navigating the digital world."
+      },
+      "card2": {
+        "title": "Easy Communication",
+        "description": "We believe that actual success starts with transparent communication. Not only do we understand code, but we also speak your language, ensuring every stage of the process is clear, approachable, and cooperative."
+      },
+      "card3": {
+        "title": "High-quality",
+        "description": "We're your idea incubator. We're here to help you transform your brilliant concept into a commercially viable reality, whether you're a marketing agency, a software house, or a media production agency."
+      },
+      "card4": {
+        "title": "On-time Delivery",
+        "description": "Plan marketing campaigns and product releases with confidence, knowing your software, digital and on-ground campaigns will be ready when needed, with no missed deadlines."
+      },
+      "card5": {
+        "title": "Flexible prices",
+        "description": "Regardless of size or budget, we believe that every business deserves high-quality solutions. Hence, we provide customizable pricing plans that can be tailored to your particular requirements and needs."
+      },
+      "card6": {
+        "title": "100% customer satisfaction",
+        "description": "We're dedicated to going above & beyond your expectations, and deliver outcomes that support your objectives. We pay close attention to your input and modify our strategy as necessary to make sure you're satisfied with the procedures and results."
+      }
+    },
+    "aboutCard-4": {
+      "title-1": "Our Quality Standards",
+      "description": "We aim to surpass our clients' expectations and promote the software and digital marketing industries, by maintaining these professional quality standards. We are advocates of establishing enduring bonds based on openness, trust, and a common drive for achievement.",
+      "title-2": "Software Development Standards",
+      "card1": {
+        "title": "Agile Methodology",
+        "description": "Throughout the software development lifecycle, we use agile development approaches to guarantee flexibility, speed, and continual improvement."
+      },
+      "card2": {
+        "title": "Industry-Leading Practices",
+        "description": "To provide the greatest possible software performance and maintainability, we follow consistent coding standards and industry best practices."
+      },
+      "card3": {
+        "title": "Open Communication",
+        "description": "Throughout the development process, we maintain transparent communication with our clients to make sure that their expectations are met"
+      },
+      "card4": {
+        "title": "Thorough Testing",
+        "description": "To ensure that campaigns are precise, pertinent, and measurable, we base our marketing decisions on data insights and analytics."
+      }
+    },
+    "aboutCard-5": {
+      "title-1": "Marketing Standards",
+      "title-2": "Overall Excellence Standards",
+      "marketing-card1": {
+        "title": "Data-Driven Strategies",
+        "description": "To ensure that campaigns are precise, pertinent, and measurable, we base our marketing decisions on data insights and analytics."
+      },
+      "marketing-card2": {
+        "title": "Ethical Practices",
+        "description": "We adhere to ethical marketing guidelines, ensuring compliance with data privacy regulations and avoiding any misleading tactics."
+      },
+      "marketing-card3": {
+        "title": "Transparency & Reporting",
+        "description": "To keep our clients informed and engaged, we provide detailed reports on campaign performance, important metrics, and ROI"
+      },
+      "marketing-card4": {
+        "title": "Continuous Optimization",
+        "description": "We constantly monitor and optimize campaigns, adjusting strategies in response to performance data and evolving market trends."
+      },
+      "standards-card1": {
+        "title": "Client Partnership",
+        "description": "treat our clients as partners, encouraging co-operation, building trust, and fulfilling their unique needs."
+      },
+      "standards-card2": {
+        "title": "Expert Team",
+        "description": "Composed of professionals with high skills and extensive experience, our team is driven to deliver outstanding outcomes."
+      },
+      "standards-card3": {
+        "title": "Quality Management System",
+        "description": "ITSP upholds a strong quality management system that guarantees consistency, effectiveness, and ongoing enhancement of all our procedures."
+      },
+      "standards-card4": {
+        "title": "Innovation & Learning",
+        "description": "To stay ahead of industry trends and provide cutting-edge solutions, we embrace innovation and encourage on-going learning."
+      }
+    },
+    "aboutCard-7": {
+      "title": "Our Dream Team",
+      "Web Developers": "Web Developers",
+      "Software Engineers": "Software Engineers",
+      "Mobile App": "Mobile App Developers",
+      "Expert Marketers": "Expert Marketers",
+      "Content Creators": "Content Creators",
+      "Video Editors": "Video Editors",
+      "Animators": "Animators"
+    }
+  },
+  "software-house": {
+    "softwareHouseHero": {
+      "title": "Software House",
+      "description": "We “potential”, “Empower” and “Cultivate” your business with our transformative Software Solutions."
+    },
+    "softwareHouse": {
+      "card1": {
+        "title": "Websites",
+        "description1": "Looking for a website? Look No Further! ",
+        "description2": "Our platform seamlessly translates your designs into pristine, semantic code, primed for webpublication and developer handoff."
+      },
+      "card2": {
+        "title": "Mobile Applications",
+        "description1": "Transforming visions into vibrant experiences!",
+        "description2": "We leverage our expertise to deliver bespoke solutions, with the ability to robust mobile appsthat resonate with end-users."
+      },
+      "card3": {
+        "title": "Desktop Applications",
+        "description1": "Enjoy uninterrupted access to Desktop applications anytime, anywhere!",
+        "description2": "With seamless download and installation processes, users can Using a diverse array ofprogramming languages—including C++, Java, Python, and much more."
+      },
+      "card4": {
+        "title": "ERP Systems",
+        "description": "Effortless efficiency with ERP software streamlines your operations in minutes ... plan, budget,predict, perform and report financial results effectively!"
+      },
+      "card5": {
+        "title": "CRM Systems",
+        "description1": "Welcome to the future of customer connections!",
+        "description2": "Customer Relationship Management with us centralizes all interactions, seamlessly integrates allyour sales, leads and customer data into a unified platform."
+      }
+    }
+  },
+  "marketing-house": {
+    "MarketingBusinessHero": {
+      "title": "Marketing & Business House",
+      "description": "Unleash the full potential of your brand with our marketing magic!",
+      "link": "Get in touch"
+    },
+    "Marketing-BusinessHouse": {
+      "card1": {
+        "title": "Marketing Consulting and Planning",
+        "description": "Your business Potentiate with our dynamic marketing planning services. We'll identifyopportunities, map out strategies, and set you on the path to unstoppable growth and success."
+      },
+      "card2": {
+        "title": "Business Consulting and Planning",
+        "description": "With our business planning process we integrate market analysis, financial forecasting, andactionable strategies to optimize resources and drive your market growth."
+      },
+      "card3": {
+        "title": "Market Analysis",
+        "description": "Harness the potency of incisive market analysis to decode trends, forecast shifts, and seizeprofitable opportunities within your industry."
+      },
+      "card4": {
+        "title": "Branding and Corporate Identity",
+        "description": "Forge a distinctive brand identity that captivates your audience, resonates with authenticity,and leaves an indelible mark on your market."
+      },
+      "card5": {
+        "title": "Brand Activations",
+        "description": "Fuel your brand's momentum with our expert brand activation services! Whether through electrifying events, captivating campaigns, or engaging interactions, we specialize in driving customer actions that propel your business forward."
+      },
+      "card6": {
+        "title": "Audience Analysis",
+        "description": "Your Audience in Your Hands! Discover their hidden gems to decode what makes customers tick, paving the way for strategic decisions that elevate your brand to new heights."
+      },
+      "card7": {
+        "title": "Public Relations",
+        "description": "Stay ahead of Trends!Our proactive approach to PR ensures that we stay ahead of trends, anticipate challenges, andcapitalize on opportunities to position your brand to be Top of Minds!"
+      }
+    }
+  },
+  "digital-house": {
+    "DigitalMarketingHouseHero": {
+      "title": "Digital Marketing House",
+      "description": "Unleash Your Brand's Digital Superpowers with ITSP!"
+    },
+    "DigitalMarketingHouse": {
+      "card1": {
+        "title": "Performance Management",
+        "description": "We are your digital marketing superheroes, transforming SEO struggles into keyword conquests,crafting captivating ad campaigns, and developing lead generation strategies that attractaudience, effectively."
+      },
+      "card2": {
+        "title": "Social Media Management",
+        "description": "At ITSP, we're content, engagement and algorithm wizards!We craft engaging & compelling posts, visually striking designs, and interactive stories thatresonate with your target audience, leaving them wanting more."
+      },
+      "card3": {
+        "title": "Content Creation and Development",
+        "description": "We don't just create content, we build relationships. We work closely with you to understandyour brand voice, target audience, and goals, ensuring every piece of content reflects yourunique identity and drives meaningful results."
+      },
+      "card4": {
+        "title": "Influencers’ Marketing",
+        "description": "We trust in the power of authentic voices, trusted relationships, and reliable referrals. That'swhy, we offer influencer marketing services that go beyond the hype, connecting you with theideal influencers, who genuinely communicate with your audience to create a buzz."
+      }
+    },
+    "DigitalMarketingHouseCard2": {
+      "card1": {
+        "title": "Graphic Design",
+        "description": "Our talented team of graphic designers deep-dive into your brand identity, translating yourvision into stunning visuals that resonate with your audience, and establish lasting brandrecognition."
+      },
+      "card2": {
+        "title": "Video Editing",
+        "description": "We master the art of storytelling, through weaving together visuals, sound, and motion like asymphony, creating a seamless and visually-enchanting experience that keeps viewers glued tothe screen."
+      },
+      "card3": {
+        "title": "Photography and Videography",
+        "description": "We adapt our style & techniques to your projects, and capture visually-stunning masterpiecesthat spark emotions, tell your brand's story, and leave audiences captivated."
+      },
+      "card4": {
+        "title": "Voice Over",
+        "description": "We transform written words into captivating voices that infuse your message with personality,emotion, and trust, driving viewers to click, convert, and connect with your brand."
+      }
+    }
+  },
+  "JobCategory": {
+    "title": "Career",
+    "description": "Push boundaries, unlock potential. Career growth starts here!",
+    "software-card": {
+      "title": "Software House",
+      "description": "We “potential” “Empower” “Cultivate” your business with our transformativeSoftware Solutions."
+    },
+    "digital-marketing-card": {
+      "title": "Digital Marketing House",
+      "description": "Unleash Your Brand's Digital Superpowers with ITSP!"
+    },
+    "marketing-business-card": {
+      "title": "Marketing & Business House",
+      "description": "Unleash the full potential of your brand with our marketing magic!"
+    },
+    "link": "Click to learn more"
+  },
+  "JobAvailable": {
+    "viewJob": "View Job"
+  },
+  "JobDetails": {
+    "Salary range": "Salary range",
+    "Description": "Description",
+    "Requirements": "Requirements",
+    "Apply": "Apply"
+  },
+  "apply": {
+    "title": "Apply Now",
+    "First name": "First name",
+    "Last name": "Last name",
+    "E-mail": "E-mail",
+    "mailPlaceholder": "E-mail address",
+    "Phone": "Phone",
+    "City": "City",
+    "Area": "Area",
+    "Birthday": "Birthday",
+    "Gender": "Gender",
+    "Image": "Image",
+    "CV": "CV",
+    "Upload": "upload",
+    "Submit": "Submit",
+    "phoneValidation": "This phone Number is invalid",
+    "required": "This field is required",
+    "Thank Message": "Thank you for applying!",
+    "Success": "Your Application have been submitted successfully",
+    "Back": "Go back"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Reach new markets, engage new audiences. We're just a click away!",
+    "slogan": "Think global, connect everywhere. Let's chat!",
+    "form": {
+      "required": "This field is required",
+      "name": "Your Name",
+      "phone": "Phone number",
+      "position": "Your Position",
+      "company": "Company name",
+      "email": "Your email address",
+      "needed": "Briefly describe the subject of your message.",
+      "other": "Write your message here.",
+      "Send": "Send",
+      "Thank Message": "Thank you for your trust",
+      "Success": "ًe will contact you soon",
+      "Back": "Go back"
+    }
+  }
+}

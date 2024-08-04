@@ -1,0 +1,669 @@
+body {
+  background-color: #ffffff;
+}
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+nav .nav-item button.btn {
+  background-color: var(--lm-body);
+  color: var(--font-dark);
+}
+nav .nav-item button.btn i {
+  color: rgba(0, 0, 0, 1);
+}
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero h1 {
+  color: var(--new-gold);
+  /* text-shadow: 2px 2px 3px rgb(148, 74, 209), -2px -2px 3px rgb(148, 74, 209),
+    2px -2px 3px rgb(148, 74, 209), -2px 2px 3px rgb(148, 74, 209); */
+}
+#hero p {
+  color: var(--black);
+}
+/*--------------------------------------------------------------
+# AboutUs page
+--------------------------------------------------------------*/
+#aboutCard-1 h2 {
+  color: #ebd660;
+}
+#aboutCard-1 p {
+  color: white;
+}
+#aboutCard-3 {
+  color: var(--black);
+}
+/* =========== */
+#aboutCard-3 swiper .card {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#aboutCard-3 .swiper-button-next:after {
+  font-family: FontAwesome;
+  content: "\f061";
+}
+#aboutCard-3 .swiper-button-prev:after {
+  font-family: FontAwesome;
+  content: "\f060";
+}
+#aboutCard-3 .swiper-button-prev:after,
+#aboutCard-3 .swiper-button-next:after {
+  color: var(--black);
+  border: 2px solid var(--black);
+  background-color: var(--font-main);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  padding: 3px 5px;
+  line-height: normal;
+}
+/* =========== */
+
+#aboutCard-6 .mini-card {
+  background-color: var(--font-main);
+  color: var(--black);
+}
+
+#aboutCard-7 {
+  background-color: var(--font-dark);
+}
+/* #aboutCard-7 > .container {
+  background-color: var(--font-main);
+  color: var(--black);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
+#aboutCard-7 > .container .col-12 {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+} */
+/*--------------------------------------------------------------
+# solutions
+--------------------------------------------------------------*/
+#solutions {
+  background-image: url(../images/solution.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+#solutions h2 {
+  color: var(--semi-gold);
+}
+#solutions p {
+  color: #f4f4f4;
+}
+#solutions .allsolutions div a .container {
+  background-color: var(--font-main);
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+#solutions .allsolutions a {
+  color: var(--font-main);
+}
+#solutions #digitalMarketing,
+#solutions #software,
+#solutions #marketing {
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 240, 34, 0) 0%,
+    rgba(247, 240, 34, 0.4) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#solutions #digitalMarketing i,
+#solutions #software i,
+#solutions #marketing i {
+  color: var(--semi-gold);
+}
+/* #solutions #digitalMarketing:hover,
+#solutions #software:hover,
+#solutions #marketing:hover {
+  background: linear-gradient(
+    -90deg,
+    rgba(176, 139, 52, 0.05) 0%,
+    rgba(236, 214, 97, 0.4) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#solutions #digitalMarketing:hover,
+#solutions #software:hover,
+#solutions #marketing:hover {
+  color: var(--font-main);
+} */
+
+/*--------------------------------------------------------------
+# Reels
+--------------------------------------------------------------*/
+#reels .reels-text h2 span {
+  color: var(--fulvous);
+}
+#reels .reels-text a {
+  color: var(--font-main);
+  background-color: var(--fulvous);
+}
+#reels .card-body {
+  color: var(--black);
+}
+#reels .card-body h5 {
+  font-family: var(--font-headers);
+}
+#reels .card-body a {
+  color: var(--fulvous);
+}
+#reels .card .reelCover i {
+  color: var(--font-dark);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+  transform: translateY(-55px);
+}
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+#portfolio h2,
+#portfolio p,
+#portfolio h5 {
+  color: var(--black);
+}
+#portfolio a.btn {
+  background-color: var(--fulvous);
+  color: var(--font-dark);
+}
+#portfolio .swiper-slide .card {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#portfolio .swiper-slide a.btn {
+  background-color: var(--fulvous);
+  color: var(--font-dark);
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+#team h2 span {
+  color: var(--fulvous);
+}
+#team .container > p {
+  color: var(--main);
+}
+/*--------------------------------------------------------------
+# ready
+--------------------------------------------------------------*/
+/* #ready {
+  background-color: var(--grey);
+  color: white;
+} */
+/* #ready {
+  background-image: url(../images/ready.png);
+  background-size: cover;
+  background-position: center center;
+} */
+#ready .col-lg-3 {
+  color: rgba(93, 47, 131, 1);
+}
+#ready .line {
+  background-color: rgba(93, 47, 131, 1);
+  height: 5px;
+  width: 100%;
+}
+#ready .circle {
+  height: 180px;
+  position: relative;
+  border-color: rgba(93, 47, 131, 1) !important;
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#ready .circle:after {
+  content: "CONTACT US";
+  font-weight: bold;
+  color: rgba(93, 47, 131, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*--------------------------------------------------------------
+# Portfolio Page
+--------------------------------------------------------------*/
+
+#projects .card {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects a.btn {
+  background-color: var(--fulvous);
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# Reels Page
+--------------------------------------------------------------*/
+
+#allReels .card {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+#allReels h3,
+#allReels p,
+#allReels h5 {
+  color: var(--black);
+}
+#allReels p small {
+  color: var(--fulvous);
+}
+/*--------------------------------------------------------------
+# contact-us page
+--------------------------------------------------------------*/
+#contact-us h1 {
+  color: var(--new-gold);
+}
+#contact-us p {
+  color: var(--font-main);
+}
+#contact-us form label {
+  color: var(--black);
+}
+#contact-us form label span {
+  color: var(--fulvous);
+}
+
+#contact-us iframe {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+/*--------------------------------------------------------------
+# Project page
+--------------------------------------------------------------*/
+#project-img .main-image img {
+  box-shadow: 0px 5px 8px var(--main);
+}
+#project-content,
+#projectImg,
+#ourProjects {
+  background-color: var(--lm-body);
+}
+#project-img h1,
+#project-content,
+#ourProjects h2,
+#ourProjects .swiper-slide .card {
+  color: var(--black);
+}
+#ourProjects h2::before,
+#ourProjects h2::after {
+  background-color: var(--main);
+}
+#ourProjects .swiper-slide .card a.btn {
+  color: var(--font-main);
+  background: var(--linear);
+}
+/*--------------------------------------------------------------
+# Category Page
+--------------------------------------------------------------*/
+#category a.btn2 {
+  background-color: var(--font-dark);
+  color: var(--main);
+}
+/*==============================
+# Category Page fady
+==============================*/
+#category .card {
+  color: var(--main);
+}
+
+/*--------------------------------------------------------------
+# JobSearch page
+--------------------------------------------------------------*/
+#jobResults .card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#jobResults .top-text h2,
+#jobResults .top-text p {
+  color: var(--black);
+}
+#jobResults .allsolutions div a .container {
+  background-color: var(--font-main);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+#jobResults .allsolutions a {
+  color: var(--font-main);
+}
+/* #jobResults #software span,
+#jobResults #marketing span,
+#jobResults #software i,
+#jobResults #marketing i {
+  color: var(--black);
+}
+
+#jobResults #software,
+#jobResults #marketing {
+  background-color: var(--font-main);
+}
+
+#jobResults #software:hover,
+#jobResults #marketing:hover {
+  background: var(--fulvous);
+}
+#jobResults #software:hover span,
+#jobResults #marketing:hover span,
+#jobResults #software:hover i,
+#jobResults #marketing:hover i {
+  color: var(--font-main);
+}
+#jobResults #digitalMarketing {
+  background: var(--fulvous);
+}
+#jobResults #digitalMarketing:hover {
+  background-color: var(--font-main);
+}
+#jobResults #digitalMarketing:hover span,
+#jobResults #digitalMarketing:hover i {
+  color: var(--black);
+} */
+#jobResults #digitalMarketing i,
+#jobResults #software i,
+#jobResults #marketing i {
+  color: #652d90;
+}
+#jobResults #digitalMarketing,
+#jobResults #software,
+#jobResults #marketing {
+  color: var(--font-main);
+  background: linear-gradient(
+    -90deg,
+    rgba(236, 215, 97, 0) 0%,
+    rgba(236, 215, 97, 0.6) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#jobResults #digitalMarketing:hover,
+#jobResults #software:hover,
+#jobResults #marketing:hover {
+  background: linear-gradient(
+    -90deg,
+    rgba(236, 215, 97, 0) 0%,
+    rgba(236, 215, 97, 0.6) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+}
+/*--------------------------------------------------------------
+# Job Details Page
+--------------------------------------------------------------*/
+#jobDetails {
+  /* background-color: #c6c6c6; */
+  color: white;
+}
+
+/* #jobDetails h2 {
+  color: var(--new-gold);
+} */
+
+/* #jobDetails .row div i,
+#jobDetails .row div span {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+#jobReq {
+  background-color: var(--lm-body);
+}
+#jobReq p,
+#jobReq ul li {
+  color: var(--black);
+}
+#jobReq .col-lg-3 .btn {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+#jobReq .col-lg-3 .btn:last-child {
+  background-color: var(--font-main);
+  /* color: var(--new-gold); */
+  border: none;
+}
+#jobReq h2 span {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#summary .layout,
+#apply .layout {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* background-color: rgba(236, 215, 97, 0.1); */
+  background-image: url(../images/jobCategories.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+#summary .layout .container-fluid i,
+#apply .layout .container-fluid i {
+  color: var(--font-dark);
+}
+#apply .container {
+  background-color: var(--font-dark);
+}
+
+#apply h2 {
+  background-color: var(--font-main);
+}
+#summary h2 span,
+#apply h2 span {
+  /* color: var(--new-gold); */
+  color: black;
+}
+/* #apply form h2 span, */
+/* #apply form label span {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+#apply form .input-group label {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+#apply form input[type="file"]::file-selector-button {
+  display: none;
+}
+#apply form input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+#apply form .form-container {
+  box-shadow: 0px 10px 10px rgba(131, 131, 131, 0.1);
+  border: 1px solid var(--lm-body);
+}
+#apply form label.d-block {
+  background-color: var(--font-main);
+}
+#summary .user-summary > h2 {
+  background-color: var(--font-main);
+  overflow: auto;
+}
+#summary .user-summary div h2 > span {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#summary a.btn {
+  background-color: var(--font-main);
+  color: var(--dm-body);
+}
+#summary .user-summary {
+  background-color: var(--lm-body);
+}
+#summary button.btn.prev {
+  background-color: var(--second-dark-color);
+  border-radius: 12px;
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# Access page
+--------------------------------------------------------------*/
+#access .card .nav-underline .nav-link,
+#access .card h1,
+#access .card .nav-underline .nav-link,
+#access .card .tab-content form label,
+#access .card .tab-content form a {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#access .card h1 svg path {
+  fill: var(--main);
+}
+
+/*--------------------------------------------------------------
+# profile & Edit profile pages
+--------------------------------------------------------------*/
+#user-profile {
+  background-color: var(--font-dark);
+}
+#user-profile .form-label {
+  color: var(--dm-body);
+}
+#user-profile .navbar {
+  background-color: var(--font-main);
+}
+#user-profile .user-name {
+  color: var(--main);
+}
+#user-profile .container-form h4 {
+  color: var(--placeholder);
+}
+#user-profile .navbar .upd-pro a.btn {
+  background-color: var(--font-dark);
+}
+
+/*--------------------------------------------------------------
+# TrackApplications page
+--------------------------------------------------------------*/
+#jobCards .card {
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.175);
+}
+#jobCards .card-body {
+  color: var(--black);
+}
+/*--------------------------------------------------------------
+# solutions pages
+--------------------------------------------------------------*/
+
+#Marketing-BusinessHouse h2,
+#Marketing-BusinessHouse p {
+  color: white;
+}
+#softwareHouse h2,
+#DigitalMarketingHouse h2 {
+  color: var(--new-gold);
+}
+#softwareHouse p,
+#DigitalMarketingHouse p {
+  color: var(--font-main);
+}
+#Marketing-BusinessHouse .swiper-wrapper {
+  align-items: center;
+  min-height: 300px;
+}
+#Marketing-BusinessHouse .swiper-slide {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  filter: blur(1px);
+  min-height: 300px;
+  padding: 25px;
+  perspective: 120px;
+}
+#Marketing-BusinessHouse .swiper-slide:not(.swiper-slide-active) .card {
+  transition: rotateY 0.3s;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 25, 85, 0.6) 0%,
+    rgba(101, 45, 144, 0.6) 100%
+  );
+  border-radius: 10px;
+}
+#Marketing-BusinessHouse .swiper-slide > div > div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+#Marketing-BusinessHouse .swiper-slide:not(.swiper-slide-active) .card {
+  transform-style: preserve-3d;
+  transform: rotateY(5deg);
+}
+
+#Marketing-BusinessHouse .swiper-slide h2 {
+  text-align: center;
+}
+#Marketing-BusinessHouse .swiper-slide-active .card {
+  box-shadow: 0px 0px 15px var(--semi-gold);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  transform: scale(1.1);
+  border-radius: 10px;
+  filter: blur(0px);
+}
+#Marketing-BusinessHouse .swiper-slide-active h2,
+#Marketing-BusinessHouse .swiper-slide-active p {
+  display: block;
+}
+
+#Marketing-BusinessHouse .swiper-slide-prev .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(177, 142, 52, 0.5) 0%,
+    rgba(177, 142, 52, 0.9) 100%
+  ) !important;
+  border-radius: 10px;
+}
+
+#Marketing-BusinessHouse .swiper-slide-next .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(177, 142, 52, 0.9) 0%,
+    rgba(177, 142, 52, 0.5) 100%
+  ) !important;
+  border-radius: 10px;
+}
+#Marketing-BusinessHouse .swiper-slide.swiper-slide-next .card,
+#Marketing-BusinessHouse .swiper-slide-next + .swiper-slide .card {
+  transform-style: preserve-3d;
+  transform: rotateY(-5deg);
+}
+
+/*--------------------------------------------------------------
+# Resources page
+--------------------------------------------------------------*/
+#caseStudy {
+  color: var(--black);
+}
+#caseStudy swiper .card {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------
+# Error 404 page
+--------------------------------------------------------------*/
+#error404 p {
+  color: #838da0;
+}
+#error404 p a {
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 91, 180, 0) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  color: black;
+  border-radius: 50px;
+}
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */

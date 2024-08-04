@@ -1,0 +1,9 @@
+.page-link {
+  color: black;
+}
+.active > .page-link,
+.page-link.active {
+  background-color: var(--new-gold);
+  color: white !important;
+  border-color: var(--semi-gold);
+}

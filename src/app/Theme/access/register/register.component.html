@@ -1,0 +1,255 @@
+<section id="register">
+  <div class="container-xxl px-0">
+    <div class="row mx-0">
+      <div class="col-lg-5 order-lg-1 order-2 text-center px-0">
+        <img src="./assets/images/register.png" alt="" class="img-fluid" />
+      </div>
+      <div class="col-lg-7 order-lg-2 order-1f py-5">
+        <div class="row mx-0 align-items-center">
+          <div class="col-6">
+            <a routerLink="/"
+              ><img
+                src="./assets/images/ITSP_logo.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-6 text-end">
+            <p class="mb-0">
+              <small class="fw-bold"
+                >Have an account? <a routerLink="/login">login</a></small
+              >
+            </p>
+          </div>
+        </div>
+        <form class="pt-5">
+          <h1 class="text-center">
+            <span>Get Started With </span>
+            <img
+              src="./assets/images/ITSP_logo_2.png"
+              alt="ITSP logo"
+              class="img-fluid mb-2"
+            />
+          </h1>
+          <p class="fs-5 text-center">Getting started is easy</p>
+          <div
+            class="mx-auto justify-content-around col-lg-9 col-md-7 col-12 px-0 text-center py-3 auth"
+          >
+            <a href="" class="btn border border-2 me-3 px-3"
+              ><img
+                src="./assets/images/google.png"
+                alt=""
+                class="img-fluid me-3"
+              />Google</a
+            >
+            <a href="" class="btn border border-2 px-3"
+              ><img
+                src="./assets/images/facebook.png"
+                alt=""
+                class="img-fluid me-3"
+              />Facebook</a
+            >
+          </div>
+          <div class="col-md-6 col-sm-8 col-12 mx-auto">
+            <div class="row mx-0">
+              <div class="col-sm-4 col-4"><hr /></div>
+              <div class="col-sm-4 col-4 px-0">
+                <p class="text-center">or continue with</p>
+              </div>
+              <div class="col-sm-4 col-4"><hr /></div>
+            </div>
+            <!-- =========================== -->
+            <div class="col-md-11 col-12 mx-auto">
+              <div class="form-group mb-3">
+                <label for="name" class="form-label"
+                  >Full-name<span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="form-label"
+                  >E-mail<span>*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="password" class="form-label"
+                  >Password<span>*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="password_confirmation" class="form-label"
+                  >Confirm password<span>*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="password_confirmation"
+                  name="password_confirmation"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="phone" class="form-label"
+                  >Phone<span>*</span></label
+                >
+                <div class="row mx-0">
+                  <div class="col-lg-3 col-md-3 col-4 px-0">
+                    <select
+                      required
+                      name="country_code"
+                      class="form-select form-select-lg px-2"
+                    >
+                      <option value="+20">+20</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-8 pe-0">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Phone Number"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label for="city" class="form-label">City<span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="City"
+                  id="city"
+                  name="city"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="area" class="form-label">Area<span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Area"
+                  id="area"
+                  name="area"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="birthday" class="form-label"
+                  >Birthday<span>*</span></label
+                >
+                <div class="row mx-0">
+                  <div class="col-4 ps-0 pe-1">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="birthday"
+                      name="birthday"
+                      maxlength="4"
+                      placeholder="Year"
+                      required
+                    />
+                  </div>
+                  <div class="col-4 px-1">
+                    <input
+                      required
+                      type="text"
+                      class="form-control form-control-lg"
+                      name="month"
+                      maxlength="2"
+                      placeholder="month"
+                    />
+                  </div>
+                  <div class="col-4 pe-0 ps-1">
+                    <input
+                      required
+                      type="text"
+                      class="form-control form-control-lg"
+                      name="day"
+                      maxlength="2"
+                      placeholder="day"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label for="gender" class="form-label"
+                  >Gender<span>*</span></label
+                >
+                <select
+                  required
+                  name="gender"
+                  id="gender"
+                  class="form-select form-select-lg"
+                >
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label">image</label>
+                <div class="input-group">
+                  <label for="image" class="input-group-text">upload</label>
+                  <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label class="form-label">CV</label>
+                <div class="input-group">
+                  <label for="CV" class="input-group-text">upload</label>
+                  <input
+                    type="file"
+                    id="CV"
+                    name="CV"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="terms&conditions"
+                />
+                <label class="form-check-label" for="terms&conditions">
+                  I agree to the terms and conditions of the website.
+                </label>
+              </div>
+              <div class="form-group text-center mb-3">
+                <button class="btn py-2 col-12">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

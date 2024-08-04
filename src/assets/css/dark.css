@@ -1,0 +1,550 @@
+body {
+  background-color: var(--dm-body);
+}
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+nav .nav-item button.btn {
+  background-color: var(--dm-body);
+  color: var(--font-dark);
+}
+
+nav .nav-item button.btn i {
+  text-shadow: 0px 0px 5px white;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero h1,
+#hero p {
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# AboutUs page
+--------------------------------------------------------------*/
+#aboutCard-1 h2 span,
+#aboutCard-1 p,
+#aboutCard-3 h2 span,
+#aboutCard-3 #navbar-about-us a,
+#aboutCard-3 .scrollspy-about-us h4 span,
+#aboutCard-3 p,
+#aboutCard-6 .mini-card h4 span {
+  color: var(--font-dark);
+}
+#aboutCard-3 .scrollspy-about-us,
+#aboutCard-3 #navbar-about-us {
+  background-color: var(--second-dark-color) !important;
+}
+#aboutCard-3 .scrollspy-about-us::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}
+#aboutCard-3 .scrollspy-about-us::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+#aboutCard-6 .mini-card {
+  background-color: var(--second-dark-color);
+  color: var(--font-dark);
+}
+#aboutCard-7 .col-12 p span,
+#aboutCard-7 .col-12 p,
+#aboutCard-7 h2 span {
+  color: var(--font-dark);
+}
+#aboutCard-7 > .container {
+  background-color: var(--second-dark-color);
+}
+#aboutCard-7 > .container .col-12 {
+  background-color: var(--dm-body);
+}
+#aboutCard-7 > .container .col-12 {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+/*--------------------------------------------------------------
+# solutions
+--------------------------------------------------------------*/
+#solutions h3,
+#solutions > .container > p {
+  color: var(--font-dark);
+}
+#solutions .allsolutions div a .container {
+  background-color: var(--font-main);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+#solutions .allsolutions .software {
+  color: var(--font-dark);
+}
+#solutions .allsolutions a {
+  color: var(--font-dark);
+}
+#solutions #software,
+#solutions #marketing {
+  background-color: var(--dm-body);
+}
+#solutions #software:hover,
+#solutions #marketing:hover {
+  color: var(--font-main);
+  background: var(--linear);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+#solutions #media,
+#solutions #e-marketing,
+#solutions #business {
+  background: var(--linear);
+  background-repeat: no-repeat;
+}
+#solutions #business:hover,
+#solutions #e-marketing:hover,
+#solutions #media:hover {
+  color: var(--font-dark);
+  background: none;
+  background-color: var(--dm-body);
+}
+
+/*--------------------------------------------------------------
+# Reels
+--------------------------------------------------------------*/
+#reels .card {
+  background-color: var(--dm-body);
+  color: var(--font-dark);
+}
+#reels .card-body {
+  color: var(--font-dark);
+}
+#reels .more-reels a {
+  color: var(--font-dark);
+  background-color: var(--dm-body);
+}
+#reels .card .reelCover i {
+  color: var(--dm-body);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+  transform: translateY(-55px);
+}
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+#portfolio h3,
+#portfolio p,
+#portfolio h5 {
+  color: var(--font-dark);
+}
+#portfolio .card {
+  background-color: var(--second-dark-color);
+}
+#portfolio .swiper-slide {
+  box-shadow: 0px 0px 10px var(--main);
+}
+#portfolio .swiper-slide a.btn {
+  background: var(--dm-body);
+  color: var(--font-dark);
+}
+#portfolio .swiper-button-next,
+.swiper-button-prev {
+  color: var(--main);
+}
+#portfolio .more-projects a {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  color: var(--font-main);
+}
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+#team h3,
+#team .container > p {
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# ready
+--------------------------------------------------------------*/
+#ready h2 {
+  color: var(--font-main);
+}
+/*--------------------------------------------------------------
+# Portfolio Page
+--------------------------------------------------------------*/
+
+#projects h2 {
+  color: var(--font-dark);
+}
+#projects .card {
+  background-color: var(--second-dark-color);
+  box-shadow: 0px 0px 10px var(--main);
+}
+#projects h3,
+#projects p,
+#projects h5 {
+  color: var(--font-dark);
+}
+#projects a.btn {
+  background: var(--dm-body);
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# Reels Page
+--------------------------------------------------------------*/
+#allReels h2 {
+  color: var(--font-dark);
+}
+#allReels .card {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.275);
+  background-color: var(--second-dark-color);
+}
+#allReels h3,
+#allReels p,
+#allReels h5 {
+  color: var(--font-dark);
+}
+#allReels a.btn {
+  background: var(--font-dark);
+  color: var(--second-dark-color);
+}
+/*--------------------------------------------------------------
+# contact-us page
+--------------------------------------------------------------*/
+#contact-us h4 {
+  color: var(--font-dark);
+}
+#contact-us p {
+  color: var(--font-dark);
+}
+#contact-us form label {
+  color: var(--font-dark);
+}
+#contact-us form input,
+#contact-us form textarea {
+  background-color: var(--second-dark-color);
+  border-color: var(--second-dark-color);
+  color: var(--font-dark);
+}
+#contact-us form input::placeholder,
+#contact-us form textarea::placeholder {
+  color: var(--placeholder);
+}
+#contact-us form input:focus,
+#contact-us form textarea:focus {
+  color: var(--font-dark);
+  box-shadow: 0 0 0 0.25rem rgb(44, 44, 44);
+}
+#contact-us form button.btn {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  color: var(--font-dark);
+}
+#contact-us iframe {
+  filter: invert(90%);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+/*--------------------------------------------------------------
+# Project page
+--------------------------------------------------------------*/
+#project-img .main-image img {
+  box-shadow: 0px 0px 10px var(--main);
+}
+#project-img h1,
+#project-content,
+#ourProjects h2,
+#ourProjects .swiper-slide .card {
+  color: var(--font-dark);
+}
+#ourProjects h2::before,
+#ourProjects h2::after {
+  background-color: var(--font-dark);
+}
+#ourProjects .swiper-slide .card {
+  background-color: var(--second-dark-color);
+}
+#ourProjects .swiper-slide .card a.btn {
+  color: var(--font-dark);
+  background-color: var(--dm-body);
+}
+/*--------------------------------------------------------------
+# Category Page
+--------------------------------------------------------------*/
+#category a.btn2 {
+  background-color: var(--dm-body);
+  color: var(--font-dark);
+}
+/*==============================
+# Category Page fady
+==============================*/
+#category .card {
+  color: var(--font-dark);
+  background-color: var(--dm-body);
+}
+/*--------------------------------------------------------------
+# JobSearch page
+--------------------------------------------------------------*/
+#jobResults .card {
+  background-color: var(--second-dark-color);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+#jobResults .card-body {
+  color: var(--font-dark);
+}
+#jobResults .top-text p,
+#jobResults .top-text h2 span {
+  color: var(--font-dark);
+}
+#jobResults .allsolutions div a .container {
+  background-color: var(--font-main);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+#jobResults .allsolutions .software {
+  color: var(--font-dark);
+}
+#jobResults .allsolutions a {
+  color: var(--font-dark);
+}
+#jobResults #software,
+#jobResults #marketing {
+  background-color: var(--dm-body);
+}
+#jobResults #software:hover,
+#jobResults #marketing:hover {
+  color: var(--font-main);
+  background: var(--linear);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+#jobResults #media,
+#jobResults #e-marketing,
+#jobResults #business {
+  background: var(--linear);
+  background-repeat: no-repeat;
+}
+#jobResults #business:hover,
+#jobResults #e-marketing:hover,
+#jobResults #media:hover {
+  color: var(--font-dark);
+  background: none;
+  background-color: var(--dm-body);
+}
+
+/*--------------------------------------------------------------
+# Job Details Page
+--------------------------------------------------------------*/
+#jobDetails {
+  background-color: var(--dm-body);
+}
+#jobDetails h2 span,
+#jobDetails h3 span {
+  color: var(--font-dark);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+#jobDetails p {
+  color: var(--font-main);
+}
+#jobDetails .row div i,
+#jobDetails .row div span {
+  color: var(--font-dark);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+#jobReq p,
+#jobReq ul li {
+  color: var(--font-dark);
+}
+#jobReq .col-lg-3 .btn {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+}
+#jobReq .col-lg-3 .btn:last-child {
+  color: var(--font-main);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+#jobReq h2 span {
+  color: var(--font-dark);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+#summary .layout,
+#apply .layout {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#summary .layout .container-fluid i,
+#apply .layout .container-fluid i {
+  color: var(--dm-body);
+}
+#apply .container {
+  background-color: var(--dm-body);
+}
+#apply form input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+#apply form .form-container {
+  box-shadow: 0px 10px 10px rgba(131, 131, 131, 0.15);
+  border: 1px solid var(--second-dark-color);
+}
+#apply form label.d-block {
+  background-color: var(--second-dark-color);
+}
+#summary h2 span,
+#apply form h2 span,
+#apply form label span {
+  color: var(--font-main);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+#summary .user-summary h5,
+#summary .user-summary span,
+#summary .user-summary label {
+  color: var(--font-dark);
+}
+#summary .user-summary {
+  background-color: var(--dm-body);
+}
+#summary h2 {
+  background-color: var(--second-dark-color);
+}
+#summary a.btn {
+  background-color: var(--second-dark-color);
+  color: var(--font-dark);
+}
+
+#summary button.btn.prev {
+  background-color: var(--font-main);
+  border-radius: 12px;
+  color: var(--dm-body);
+}
+/*--------------------------------------------------------------
+# Access page
+--------------------------------------------------------------*/
+#access .card {
+  background-color: var(--dm-body);
+}
+#access .card form input,
+#access .card form select {
+  background-color: var(--second-dark-color);
+  border-color: var(--second-dark-color);
+  color: var(--font-dark);
+}
+#access .card form input:active,
+#access .card form input:focus {
+  box-shadow: 0 0 0 0.25rem rgb(44, 44, 44);
+}
+
+#access .card form input::placeholder {
+  color: var(--font-dark);
+}
+#access .card .nav-underline .nav-link,
+#access .card h1,
+#access .card .nav-underline .nav-link,
+#access .card .tab-content form label,
+#access .card .tab-content form a {
+  color: var(--font-dark);
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+#access .card h1 svg path {
+  fill: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# profile & Edit profile pages
+--------------------------------------------------------------*/
+
+#user-profile .navbar {
+  background-color: var(--dm-body2);
+}
+#user-profile .user-name {
+  color: var(--font-main);
+}
+#user-profile .container-form h4 {
+  color: var(--font-dark);
+}
+#user-profile .cl-2,
+#user-profile input,
+#user-profile select {
+  background-color: var(--second-dark-color);
+  border-color: var(--dm-body);
+  color: var(--font-dark);
+}
+#user-profile input::placeholder,
+#user-profile select::placeholder {
+  color: var(--font-dark);
+}
+#user-profile .form-label {
+  color: var(--lm-body);
+}
+#user-profile hr {
+  border-color: var(--font-dark);
+}
+
+#user-profile .navbar .upd-pro a.btn {
+  background-color: var(--font-dark);
+}
+#user-profile .container-form {
+  background-color: var(--dm-body3);
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
+/*--------------------------------------------------------------
+# TrackApplications page
+--------------------------------------------------------------*/
+#jobCards .card {
+  box-shadow: 0px 10px 10px 5px rgba(168, 168, 168, 0.09);
+  background: var(--linear-dark);
+}
+#jobCards .card-body {
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# solutions pages
+--------------------------------------------------------------*/
+#softwareHouse h1,
+#softwareHouse h4,
+#Marketing-BusinessHouse h1,
+#Marketing-BusinessHouse h4,
+#DigitalMarketingHouse h1,
+#DigitalMarketingHouse h4,
+#DigitalMarketingHouse p,
+#Marketing-BusinessHouse p,
+#softwareHouse p {
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# Resources page
+--------------------------------------------------------------*/
+#caseStudy h2 span,
+#blog h2 span {
+  color: var(--font-dark);
+}
+#caseStudy .card,
+#caseStudy .card small,
+#events .card,
+#events .card small {
+  background-color: var(--second-dark-color);
+  color: var(--font-dark) !important;
+}
+
+/*--------------------------------------------------------------
+# Error 404 page
+--------------------------------------------------------------*/
+#error404 {
+  background: var(--linear-dark);
+  color: var(--font-dark);
+}
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  #solutions #media {
+    background-color: var(--font-dark);
+    background: var(--second-dark-color);
+  }
+  #solutions #software:hover,
+  #solutions #marketing:hover,
+  #solutions #media:hover {
+    color: var(--font-dark);
+    background: var(--linear);
+    background-repeat: no-repeat;
+  }
+}

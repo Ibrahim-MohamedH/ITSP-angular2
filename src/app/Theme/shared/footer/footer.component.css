@@ -1,0 +1,35 @@
+footer {
+  color: white;
+}
+footer h2,
+footer h3,
+footer .fs-4 {
+  color: var(--semi-gold);
+}
+footer .circle {
+  background-color: var(--new-gold);
+  height: 5px;
+  width: 100%;
+  border-radius: 50%;
+}
+footer .navs li a {
+  position: relative;
+}
+
+footer a.gold-line:before {
+  background-image: linear-gradient(
+    180deg,
+    rgba(184, 173, 115, 0.7679446778711485) 0%,
+    rgba(176, 156, 52, 1) 100%
+  );
+}
+footer a.purple-line:before {
+  background-image: linear-gradient(
+    180deg,
+    rgba(190, 119, 233, 0.77) 0%,
+    rgba(179, 85, 236, 1) 100%
+  );
+}
+footer .social-links i {
+  color: #ebd660;
+}

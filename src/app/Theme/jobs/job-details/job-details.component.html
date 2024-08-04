@@ -1,0 +1,524 @@
+<app-navbar></app-navbar>
+<div class="shimmer-loader" *ngIf="loader">
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+<section id="jobDetails" class="">
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      <h2 class="fw-semibold placeholder-glow">
+        <a
+          routerLink="/{{ currentLang }}/jobs/{{ job.categories_id }}"
+          class="btn"
+          ><i class="fa-solid fa-chevron-left" *ngIf="currentLang == 'en'"></i>
+          <i class="fa-solid fa-chevron-right" *ngIf="currentLang == 'ar'"></i
+        ></a>
+        {{ job.postion }}
+        <span
+          class="col-lg-6 col-md-7 col-12 placeholder ms-md-3"
+          *ngIf="loader"
+        ></span>
+      </h2>
+      <!-- <p>
+        {{ job.discription }}
+      </p> -->
+      <div class="row mb-3">
+        <div
+          class="col-xxl-1 col-lg-2 col-md-3 fw-medium mb-lg-0 mb-3 placeholder-glow"
+        >
+          <i class="fa-solid fa-bag-shopping me-2"></i>
+          {{ levels[job.job_level] }}
+          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
+        </div>
+        <div
+          class="col-xxl-1 col-lg-2 px-lg-0 col-md-9 fw-medium mb-lg-0 mb-3 placeholder-glow"
+        >
+          <i class="fa-regular fa-clock me-2"></i> {{ types[job.job_type] }}
+          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
+        </div>
+        <div
+          class="col-xxl-1 col-lg-2 col-md-3 pe-lg-0 fw-medium mb-lg-0 mb-3 placeholder-glow"
+        >
+          <i class="fa-regular fa-building me-2"></i>
+          {{ places[job.job_place] }}
+          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
+        </div>
+        <!-- <div class="col-xl-3 col-lg-3 col-md-9 fw-medium mb-lg-0 mb-3">
+          <i class="fa-solid fa-graduation-cap me-2"></i>
+          Computer Science
+        </div> -->
+      </div>
+      <h3 class="fw-semibold placeholder-glow">
+        {{ "JobDetails.Salary range" | translate }}: E£ {{ job.range_salary }}
+        <span
+          class="col-lg-2 col-md-4 col-6 d-inline-block placeholder"
+          *ngIf="loader"
+        ></span>
+      </h3>
+      <!-- <h3 class="fw-semibold">
+
+      </h3> -->
+    </div>
+  </div>
+</section>
+<section id="jobReq" class="py-5">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-4 mb-lg-0 mb-3">
+        <!-- <h2 class="fw-semibold mb-3">Skills</h2>
+        <ul>
+          <li *ngFor="let skill of job.skills">{{ skill }}</li>
+        </ul> -->
+        <h2 class="fw-semibold mb-3">
+          {{ "JobDetails.Description" | translate }}
+        </h2>
+        <p class="mb-1 placeholder-glow" *ngIf="loader">
+          <span class="col-10 placeholder"></span>
+          <span class="col-8 placeholder"></span>
+          <span class="col-9 placeholder"></span>
+          <span class="col-2 placeholder"></span>
+        </p>
+        <p class="mb-1" *ngFor="let point of discription">
+          {{ point.length != 0 ? point : null }}
+        </p>
+      </div>
+      <div class="col-lg-5 mb-lg-0 mb-3">
+        <h2 class="fw-semibold mb-3">
+          {{ "JobDetails.Requirements" | translate }}
+        </h2>
+
+        <p class="mb-1 placeholder-glow" *ngIf="loader">
+          <span class="col-10 placeholder"></span>
+          <span class="col-8 placeholder"></span>
+          <span class="col-9 placeholder"></span>
+          <span class="col-2 placeholder"></span>
+        </p>
+        <p class="mb-1" *ngFor="let requirment of requirments">
+          {{ requirment }}
+        </p>
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <a
+              *ngIf="!loader"
+              routerLink="/{{ currentLang }}/apply/{{ jobId }}"
+              class="btn apply col-lg-11 py-3 mb-3"
+            >
+              {{ "JobDetails.Apply" | translate }}
+            </a>
+            <!-- <a href="#" class="btn col-lg-11 py-3">Share</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====================================== -->
+<!-- <div id="apply" *ngIf="apply">
+  <div class="layout py-5">
+    <form
+      class="container col-lg-6 col-md-8 pb-4 px-0"
+      [formGroup]="applicationForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <h2 class="fw-bold mb-3 rounded-3 py-3 fw-normal mb-0 ps-md-5 ps-3">
+        <button
+          type="button"
+          id="exit"
+          (click)="close()"
+          class="btn me-2 exit float-end fw-semibold py-2 px-5"
+        >
+          Close</button
+        ><span>Apply Now</span>
+      </h2>
+      <div class="form-info px-md-5 px-2">
+        <div class="px-md-5">
+          <div class="row mb-3">
+            <div class="form-group mb-3 col-md-6">
+              <label for="first_name" class="form-label">First-name*</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="first_name"
+                formControlName="first_name"
+                name="first_name"
+                required
+                placeholder="First name"
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['first_name'].invalid &&
+                  (applicationForm.controls['first_name'].dirty ||
+                    applicationForm.controls['first_name'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['first_name'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['first_name'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['first_name'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="last_name" class="form-label">last-name*</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="last_name"
+                formControlName="last_name"
+                name="last_name"
+                required
+                placeholder="Last Name"
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['last_name'].invalid &&
+                  (applicationForm.controls['last_name'].dirty ||
+                    applicationForm.controls['last_name'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['last_name'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['last_name'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['last_name'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="email" class="form-label">E-mail*</label>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                formControlName="email"
+                id="email"
+                name="email"
+                required
+                placeholder="E-mail address"
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['email'].invalid &&
+                  (applicationForm.controls['email'].dirty ||
+                    applicationForm.controls['email'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['email'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['email'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['email'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="phone" class="form-label">Phone*</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                formControlName="phone"
+                id="phone"
+                name="phone"
+                required
+                placeholder="01xx xxxx xxx"
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['phone'].invalid &&
+                  (applicationForm.controls['phone'].dirty ||
+                    applicationForm.controls['phone'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['phone'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['phone'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['phone'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="city_id" class="form-label">City*</label>
+              <select
+                class="form-select form-select-lg"
+                formControlName="city_id"
+                id="city_id"
+                name="city_id"
+                required
+              >
+                <option disabled selected>Choose...</option>
+                <option *ngFor="let city of cities" [value]="city.id">
+                  {{ city.city }}
+                </option>
+              </select>
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['city_id'].invalid &&
+                  (applicationForm.controls['city_id'].dirty ||
+                    applicationForm.controls['city_id'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['city_id'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['city_id'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['city_id'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="area" class="form-label">Area*</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                formControlName="area"
+                id="area"
+                name="area"
+                required
+                placeholder="Area"
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['area'].invalid &&
+                  (applicationForm.controls['area'].dirty ||
+                    applicationForm.controls['area'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['area'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['area'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['area'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="birthday" class="form-label">Birthday*</label>
+              <input
+                type="date"
+                class="form-control form-control-lg"
+                formControlName="birthday"
+                id="birthday"
+                name="birthday"
+                required
+              />
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['birthday'].invalid &&
+                  (applicationForm.controls['birthday'].dirty ||
+                    applicationForm.controls['birthday'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['birthday'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['birthday'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['birthday'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label for="gender" class="form-label">Gender*</label>
+              <select
+                required
+                name="gender"
+                id="gender"
+                class="form-select form-select-lg"
+                formControlName="gender"
+              >
+                <option disabled selected>Choose...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <div
+                class="ms-error"
+                *ngIf="
+                  applicationForm.controls['gender'].invalid &&
+                  (applicationForm.controls['gender'].dirty ||
+                    applicationForm.controls['gender'].touched)
+                "
+              >
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['gender'].errors?.['required']"
+                >
+                  This field is required
+                </div>
+                <div
+                  class="ms-error"
+                  *ngIf="applicationForm.controls['gender'].errors?.['serverError']"
+                >
+                  {{applicationForm.controls['gender'].errors?.['serverError'][0]}}
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label class="form-label">image*</label>
+              <div class="input-group">
+                <label for="image" class="input-group-text">upload</label>
+                <input
+                  type="file"
+                  id="image"
+                  name="image"
+                  (change)="onimageChange($event)"
+                  class="form-control form-control-lg"
+                  #imageInput
+                />
+                <div
+                  class="ms-error"
+                  *ngIf="
+                    applicationForm.controls['image'].invalid &&
+                    (applicationForm.controls['image'].dirty ||
+                      applicationForm.controls['image'].touched)
+                  "
+                >
+                  <div
+                    class="ms-error"
+                    *ngIf="applicationForm.controls['image'].errors?.['required']"
+                  >
+                    This field is required
+                  </div>
+                  <div
+                    class="ms-error"
+                    *ngIf="applicationForm.controls['image'].errors?.['serverError']"
+                  >
+                    {{applicationForm.controls['image'].errors?.['serverError'][0]}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3 col-md-6">
+              <label class="form-label">CV*</label>
+              <div class="input-group">
+                <label for="cv" class="input-group-text">upload</label>
+                <input
+                  type="file"
+                  id="cv"
+                  name="cv"
+                  (change)="onCvChange($event)"
+                  class="form-control form-control-lg"
+                  #cvInput
+                />
+                <div
+                  class="ms-error"
+                  *ngIf="
+                    applicationForm.controls['cv'].invalid &&
+                    (applicationForm.controls['cv'].dirty ||
+                      applicationForm.controls['cv'].touched)
+                  "
+                >
+                  <div
+                    class="ms-error"
+                    *ngIf="applicationForm.controls['cv'].errors?.['required']"
+                  >
+                    This field is required
+                  </div>
+                  <div
+                    class="ms-error"
+                    *ngIf="applicationForm.controls['cv'].errors?.['serverError']"
+                  >
+                    {{applicationForm.controls['cv'].errors?.['serverError'][0]}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button
+              [disabled]="!applicationForm.valid"
+              class="btn py-2 col-12"
+              type="submit"
+            >
+              <i class="fa-solid fa-circle-check me-2"></i>Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="thank-message" *ngIf="thankYouMessage">
+  <div class="show row justify-content-center mx-0 pt-5">
+    <div class="col-xl-6 col-lg-7 col-md-8 col-11 mt-5">
+      <div class="container">
+        <div class="row p-sm-4 px-3 py-5">
+          <div class="col-sm-10 order-sm-1 order-2 text-sm-start text-center">
+            <h3 class="mb-3">Thank you for your trust</h3>
+            <p class="mb-5">
+              Your Application have been submitted successfully
+            </p>
+            <div
+              class="row justify-content-sm-around justify-content-center mx-0"
+            >
+              <a
+                routerLink="/{{currentLang}}/jobs/{{ job.categories_id }}"
+                class="btn col-sm-5 order-sm-1 order-2 col-8"
+                >View Other Jobs</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-sm-2 d-flex align-items-center justify-content-center order-sm-2 order-1 mb-sm-0 mb-4"
+          >
+            <i class="fa-regular fa-handshake"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<app-footer></app-footer>

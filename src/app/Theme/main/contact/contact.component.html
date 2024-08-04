@@ -1,0 +1,294 @@
+<app-navbar></app-navbar>
+<!-- contact us -->
+<section id="contact-us">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 px-sm-5 py-5">
+        <div class="mb-4">
+          <h1 class="mb-3 display-2">{{ "contact.title" | translate }}</h1>
+          <p class="mb-0">
+            {{ "contact.description" | translate }}
+          </p>
+
+          <p class="fw-bold">{{ "contact.slogan" | translate }}</p>
+        </div>
+        <form [formGroup]="contactForm">
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              formControlName="name"
+              class="form-control rounded-pill"
+              [placeholder]="'contact.form.name' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['name'].invalid &&
+                (contactForm.controls['name'].dirty ||
+                  contactForm.controls['name'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['name'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['name'].errors?.['serverError']"
+              >
+                {{contactForm.controls['name'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <input
+              type="string"
+              formControlName="phone"
+              class="form-control rounded-pill"
+              id="phone"
+              name="phone"
+              [placeholder]="'contact.form.phone' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['phone'].invalid &&
+                (contactForm.controls['phone'].dirty ||
+                  contactForm.controls['phone'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['phone'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['phone'].errors?.['serverError']"
+              >
+                {{contactForm.controls['phone'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              id="position"
+              formControlName="position"
+              name="position"
+              class="form-control rounded-pill"
+              [placeholder]="'contact.form.position' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['position'].invalid &&
+                (contactForm.controls['position'].dirty ||
+                  contactForm.controls['position'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['position'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['position'].errors?.['serverError']"
+              >
+                {{contactForm.controls['position'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              id="company"
+              formControlName="company"
+              name="company"
+              class="form-control rounded-pill"
+              [placeholder]="'contact.form.company' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['company'].invalid &&
+                (contactForm.controls['company'].dirty ||
+                  contactForm.controls['company'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['company'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['company'].errors?.['serverError']"
+              >
+                {{contactForm.controls['company'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              [style]="currentLang == 'ar' ? 'text-align: end' : ''"
+              type="email"
+              id="email"
+              name="email"
+              class="form-control rounded-pill"
+              formControlName="email"
+              [placeholder]="'contact.form.email' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['email'].invalid &&
+                (contactForm.controls['email'].dirty ||
+                  contactForm.controls['email'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['email'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['email'].errors?.['serverError']"
+              >
+                {{contactForm.controls['email'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              id="needs"
+              name="needs"
+              formControlName="needs"
+              class="form-control rounded-pill"
+              [placeholder]="'contact.form.needed' | translate"
+              required
+            />
+            <div
+              class="ms-error"
+              *ngIf="
+                contactForm.controls['needs'].invalid &&
+                (contactForm.controls['needs'].dirty ||
+                  contactForm.controls['needs'].touched)
+              "
+            >
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['needs'].errors?.['required']"
+              >
+                {{ "contact.form.required" | translate }}
+              </div>
+              <div
+                class="ms-error"
+                *ngIf="contactForm.controls['needs'].errors?.['serverError']"
+              >
+                {{contactForm.controls['needs'].errors?.['serverError'][0]}}
+              </div>
+            </div>
+            <!-- ======================== -->
+          </div>
+          <div class="form-group mb-3">
+            <textarea
+              name="other"
+              id="other"
+              cols="30"
+              rows="4"
+              formControlName="other"
+              class="form-control rounded-5"
+              [placeholder]="'contact.form.other' | translate"
+            ></textarea>
+          </div>
+          <div class="form-group mt-sm-5 mt-4 text-center">
+            <button
+              type="button"
+              (click)="submit()"
+              [disabled]="!contactForm.valid"
+              class="btn py-2 px-5 rounded-pill"
+            >
+              {{ "contact.form.Send" | translate }}
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <img
+          *ngIf="currentLang == 'en'"
+          src="../../../../assets/images/contact-us.webp"
+          alt=""
+          class="img-fluid"
+        />
+        <img
+          *ngIf="currentLang == 'ar'"
+          src="../../../../assets/images/contact-us-rtl.webp"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================================== -->
+<div class="shimmer-loader" *ngIf="loader">
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+<div class="thank-message" *ngIf="thankYouMessage">
+  <div class="show row justify-content-center mx-0 pt-5">
+    <div class="col-xl-6 col-lg-7 col-md-8 col-11 mt-5">
+      <div class="container">
+        <div class="row p-sm-4 px-3 py-5">
+          <div class="col-sm-10 order-sm-1 order-2 text-sm-start text-center">
+            <h3 class="mb-3">{{ "contact.form.Thank Message" | translate }}</h3>
+            <p class="mb-5">{{ "contact.form.Success" | translate }}</p>
+            <div
+              class="row justify-content-sm-around justify-content-center mx-0"
+            >
+              <a
+                (click)="close()"
+                class="btn col-sm-5 order-sm-1 order-2 col-8"
+                >{{ "contact.form.Back" | translate }}</a
+              >
+              <!-- <button
+                (click)="close()"
+                class="btn close col-sm-5 col-8 order-sm-2 order-1 mb-sm-0 mb-3"
+              >
+                Contact Us again
+              </button> -->
+            </div>
+          </div>
+          <div
+            class="col-sm-2 d-flex align-items-center justify-content-center order-sm-2 order-1 mb-sm-0 mb-4"
+          >
+            <i class="fa-regular fa-handshake"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

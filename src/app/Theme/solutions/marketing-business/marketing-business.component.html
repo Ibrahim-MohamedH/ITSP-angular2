@@ -1,0 +1,207 @@
+<app-navbar></app-navbar>
+<section id="MarketingBusinessHero">
+  <div class="container-fluid py-5">
+    <div class="py-5">
+      <div class="py-lg-5">
+        <div class="py-lg-5">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 py-lg-5">
+              <h1 class="pb-2 display-4 animate__animated animate__bounceIn">
+                {{ "marketing-house.MarketingBusinessHero.title" | translate }}
+              </h1>
+              <p
+                class="pb-5 fs-3 col-md-8 col-sm-10 col-12 fw-bold animate__animated animate__fadeInUp"
+              >
+                {{
+                  "marketing-house.MarketingBusinessHero.description"
+                    | translate
+                }}
+              </p>
+              <a
+                routerLink="/contact"
+                class="btn gradient-border fs-2 py-2 px-5"
+                >{{
+                  "marketing-house.MarketingBusinessHero.link" | translate
+                }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Marketing-BusinessHouse" class="py-5">
+  <div class="container-fluid px-lg-5 py-5">
+    <div class="py-lg-5">
+      <div class="py-lg-5">
+        <swiper [config]="hero">
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card1.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card1.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Business Consulting and Planning</h2>
+            <p class="my-auto">
+              With our business planning process we integrate market analysis,
+              financial forecasting, andactionable strategies to optimize
+              resources and drive your market growth.
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card2.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card2.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Market Analysis</h2>
+            <p class="my-auto">
+              Harness the potency of incisive market analysis to decode trends,
+              forecast shifts, and seizeprofitable opportunities within your
+              industry.
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card3.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card3.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Branding and Corporate Identity</h2>
+            <p class="my-auto">
+              Forge a distinctive brand identity that captivates your audience,
+              resonates with authenticity,and leaves an indelible mark on your
+              market.
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card4.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card4.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Brand Activations</h2>
+            <p class="my-auto">
+              Fuel your brand's momentum with our expert brand activation
+              services! Whether through electrifying events, captivating
+              campaigns, or engaging interactions, we specialize in driving
+              customer actions that propel your business forward.
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card5.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card5.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Audience Analysis</h2>
+            <p class="my-auto">
+              Your Audience in Your Hands! Discover their hidden gems to decode
+              what makes customers tick, paving the way for strategic decisions
+              that elevate your brand to new heights.
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card6.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card6.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <!-- <h2 class="pb-1 fs-3">Public Relations</h2>
+            <p class="my-auto">
+              Stay ahead of Trends!Our proactive approach to PR ensures that we
+              stay ahead of trends, anticipate challenges, andcapitalize on
+              opportunities to position your brand to be Top of Minds!
+            </p> -->
+            <div class="card">
+              <div class="card-body">
+                <h2 class="pb-1 fs-3">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card7.title"
+                      | translate
+                  }}
+                </h2>
+                <p class="my-auto">
+                  {{
+                    "marketing-house.Marketing-BusinessHouse.card7.description"
+                      | translate
+                  }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

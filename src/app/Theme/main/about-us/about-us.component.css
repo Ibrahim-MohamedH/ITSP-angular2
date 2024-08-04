@@ -1,0 +1,76 @@
+#AboutUs-hero h1 {
+  color: var(--semi-gold);
+}
+
+#aboutCard-4,
+#aboutCard-7 {
+  overflow-y: hidden;
+}
+#aboutCard-6 .col-lg-6 .mini-card,
+#aboutCard-7 .rows {
+  transition: background-color 0.3s, color 0.4s;
+}
+#aboutCard-6 .col-lg-6 .mini-card:hover {
+  background-color: var(--fulvous);
+  color: white;
+}
+#aboutCard-7 .rows:hover {
+  background-color: var(--fulvous);
+  color: white;
+}
+
+#aboutCard-3 h2 {
+  color: #b18e3483;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#aboutCard-3 h2.fs-1,
+#aboutCard-3 .card h3 {
+  color: var(--semi-gold);
+}
+
+#aboutCard-3 p {
+  color: white;
+}
+
+#aboutCard-4 {
+  background-image: url(../../../../assets/images/aboutCard-4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutCard-4 h2 {
+  color: var(--semi-gold);
+}
+#aboutCard-4 h3 {
+  color: var(--semi-gold);
+}
+#aboutCard-4 p {
+  color: white;
+}
+
+#aboutCard-5 {
+  background-image: url(../../../../assets/images/aboutCard-5.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#aboutCard-5 .card {
+  background: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+
+#aboutCard-5 .card h3 {
+  color: var(--new-gold);
+}
+#aboutCard-5 .card p {
+  color: white;
+}
+#aboutCard-7 {
+  background-image: url(../../../../assets/images/aboutCard-7.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

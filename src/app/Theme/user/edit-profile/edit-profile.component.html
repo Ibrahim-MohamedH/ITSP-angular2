@@ -1,0 +1,230 @@
+<app-navbar></app-navbar>
+<section id="profile" class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="fw-semibold">Hello Zeyad !</h1>
+        <p class="fs-5">
+          This is your profile page. You can see the progress you've made with
+          your profile and manage your profile details
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="user-profile" class="px-sm-0 px-2 py-5">
+  <div class="container">
+    <div class="row container-form rounded-4">
+      <div class="col-12">
+        <div class="card bg-transparent border-0 mb-3">
+          <div class="row g-0">
+            <div class="col-lg-1 col-md-2 col-sm-3">
+              <img
+                src="assets/images/profile.png"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-11 col-md-10 col-sm-9">
+              <div class="card-body">
+                <h2 class="card-title">Zeyad.abdelazim</h2>
+                <p class="card-text">Zeyad.abdelazim22@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ueser Information -->
+      <div class="main-user-input col-12 px-4 mt-3">
+        <div class="row gx-5 gy-3">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              value="Zeyad.abdelazim"
+              id="inputName"
+              class="form-control form-control-lg"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              id="inputEmail4"
+              value="Zeyad98@gmail.com"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="row mx-0">
+              <div class="col-xl-2 col-lg-3 col-md-3 col-4 px-0">
+                <select
+                  required
+                  name="country_code"
+                  class="form-select form-select-lg"
+                >
+                  <option value="+20">+20</option>
+                </select>
+              </div>
+              <div class="col-xl-10 col-lg-9 col-md-9 col-8 pe-0">
+                <input
+                  required
+                  type="text"
+                  class="form-control form-control-lg"
+                  value="01099999999"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input
+              required
+              type="text"
+              value="Giza"
+              id="inputCity"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputArea" class="form-label">Area</label>
+            <input
+              required
+              type="text"
+              value="Giza"
+              id="inputArea"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputDate" class="form-label">Birth year</label>
+            <div class="col-12 row mx-0 px-0">
+              <div class="col-sm-4 mb-sm-0 mb-3 ps-0">
+                <input
+                  required
+                  class="form-control form-control-lg"
+                  type="text"
+                  placeholder="Year"
+                  value="2000"
+                />
+              </div>
+              <div class="col-sm-4 mb-sm-0 mb-3">
+                <input
+                  required
+                  class="form-control form-control-lg"
+                  type="text"
+                  placeholder="Year"
+                  value="Jan"
+                />
+              </div>
+              <div class="col-sm-4 mb-sm-0 mb-3 pe-0">
+                <input
+                  required
+                  type="text"
+                  placeholder="Day"
+                  class="form-control form-control-lg"
+                  value="01"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Gender</label>
+            <input
+              required
+              type="text"
+              class="form-control form-control-lg"
+              id="inputState"
+              value="Male"
+            />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">image</label>
+            <div class="input-group">
+              <label for="image" class="input-group-text">upload</label>
+              <input
+                required
+                type="file"
+                id="image"
+                name="image"
+                class="form-control form-control-lg"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <p>Once you click Save, all your data will be changed</p>
+          </div>
+          <div class="col-12">
+            <button class="btn px-5 me-3 py-2">
+              <span class="px-5">Save Change</span>
+            </button>
+            <a routerLink="/profile" class="btn px-5 py-2"
+              ><span class="px-5">Cancel</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end user Information -->
+      <!-- <div class="col-12 px-4 my-4">
+        <hr />
+      </div> -->
+      <!--Contact Information  -->
+      <!-- <div class="main-user-input col-12 px-4">
+        <h4 class="py-4">Contact Information</h4>
+        <div class="row gx-5 gy-4">
+          <div class="col-md-6">
+            <label for="inputcity" class="form-label">City</label>
+            <input
+              type="text"
+              value="Giza"
+              id="inputcity"
+              class="form-control form-control-lg"
+              readonly
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputarea" class="form-label">Area</label>
+            <input
+              type="email"
+              value="Haram"
+              class="form-control form-control-lg"
+              id="inputarea"
+              readonly
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputnumber" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              value="Haram"
+              class="form-control form-control-lg"
+              id="inputnumber"
+              readonly
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="formFile" class="form-label">File Upload</label>
+            <div class="input-group mb-3">
+              <label class="input-group-text cl-2" for="formFile"
+                ><i class="fa-regular fa-file pe-2"></i> CV</label
+              >
+              <input
+                type="text"
+                value="File Name"
+                class="form-control form-control-lg cl"
+                id="formFile"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!--end Contact Information  -->
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

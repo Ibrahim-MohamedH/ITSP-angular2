@@ -1,0 +1,1376 @@
+/* @font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/lato/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+} */
+:root {
+  --new-gold: #b08b34;
+  --semi-gold: #ecd661;
+  --main: #2a286b;
+  --font-main: #ffffff;
+  --main-paragraph: #4f5a68;
+  --linear: linear-gradient(to right, #2a286b, #0861b3);
+  --linear-dark: linear-gradient(to right, #222222, #4e4e4e);
+  --dm-body: #222222;
+  --dm-body2: #333333;
+  --dm-body3: #444444;
+  --lm-body: #efefef;
+  --font-dark: #f4f4f4;
+  --second-dark-color: #4e4e4e;
+  --placeholder: #80848a;
+  --btn-back: 8px 16px;
+  /* new Colors */
+  --chocolate-cosmos: rgb(68, 17, 21);
+  --orange-web: rgb(243, 176, 28);
+  --fulvous: rgb(230, 133, 34);
+  --offwhite: rgb(230, 230, 230);
+  --orange: #e76221;
+  --black: rgb(35, 31, 32);
+  --grey: #545454;
+}
+
+
+body,
+section {
+  overflow-x: hidden;
+}
+/* html {
+  background: var(--linear);
+} */
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero {
+  background-image: url(../images/homeHero.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+  overflow-y: hidden;
+  min-height: 80vh;
+}
+#hero .container-fluid {
+  min-height: 80vh;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+#hero p span.fw-bold {
+  /* color: var(--fulvous); */
+  color: var(--new-gold);
+}
+#hero a.btn {
+  /* background-color: var(--fulvous); */
+  /* border-radius: 8px; */
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 91, 180, 0) 0%,
+    rgba(233, 211, 96, 0.3) 100%
+  );
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.3s;
+}
+#hero a.btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(233, 211, 96, 0.3) 0%,
+    rgba(233, 211, 96, 0.8) 100%
+  );
+
+  background-repeat: no-repeat;
+}
+#hero swiper {
+  padding: 40px 0px;
+}
+#hero .swiper-slide img {
+  border-radius: 20px;
+}
+#hero .swiper-slide {
+  filter: blur(2px);
+  opacity: 1;
+}
+#hero .swiper-slide {
+  z-index: -2;
+  transform: scale(0.7);
+}
+#hero .swiper-slide-next,
+#hero .swiper-slide-prev {
+  z-index: -1;
+}
+
+#hero .swiper-wrapper {
+  align-items: center;
+}
+#hero .swiper-slide-active {
+  filter: blur(0px);
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.2);
+}
+.swiper-slide-prev,
+.swiper-slide-next {
+  z-index: -1;
+}
+
+.swiper-slide:hover {
+  cursor: grab;
+}
+.swiper-slide:active {
+  cursor: grabbing;
+}
+/*--------------------------------------------------------------
+# AboutUs page
+--------------------------------------------------------------*/
+
+#AboutUs-hero {
+  background-image: url(../images/AboutUs_hero.webp);
+  color: var(--font-main);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+#aboutCard-1 {
+  background-image: url(../images/aboutCard-1.webp);
+  /* color: var(--font-main); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+#aboutCard-2 {
+  background: url(../images/aboutCard-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: var(--font-main);
+}
+#aboutCard-2 h2 {
+  color: #ebd660;
+}
+#aboutCard-3 {
+  background-image: url(../images/aboutCard-3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* ================== */
+#aboutCard-3 swiper .card {
+  border: none;
+  border-radius: 12px;
+}
+#aboutCard-3 p.card-text {
+  font-size: 16px;
+}
+#aboutCard-3 swiper {
+  padding: 40px 0px;
+}
+
+#aboutCard-3 .swiper-slide {
+  z-index: -2;
+  transform: scale(0.9);
+}
+#aboutCard-3 .swiper-slide-next,
+#aboutCard-3 .swiper-slide-prev {
+  z-index: -1;
+}
+
+#aboutCard-3 .swiper-wrapper {
+  align-items: center;
+  text-align: left !important;
+}
+#aboutCard-3 .swiper-slide-active {
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.swiper-slide:hover {
+  cursor: grab;
+}
+.swiper-slide:active {
+  cursor: grabbing;
+}
+/* ================== */
+/* ===== End ScrollBar Edit ===== */
+
+#aboutCard-4 {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+#aboutCard-4 h2 + p {
+  font-size: 20px;
+}
+
+#aboutCard-4 .position-absolute p {
+  font-size: 20px;
+}
+
+#aboutCard-5 p {
+  text-transform: capitalize;
+}
+#aboutCard-6 {
+  /* background-image: url(../images/AboutUs.png);
+  background-size: cover; */
+  color: var(--font-main);
+}
+
+#aboutCard-6 .mini-card {
+  min-height: 160px;
+}
+#aboutCard-4 .position-relative img {
+  width: 100%;
+}
+
+#aboutCard-7 > .container .col-12 .row {
+  min-height: 88px;
+}
+
+/*--------------------------------------------------------------
+# solutions
+--------------------------------------------------------------*/
+#solutions {
+  background-color: var(--black);
+  background-repeat: no-repeat;
+}
+#solutions h2 {
+  font-size: 40px;
+}
+#solutions .allsolutions div a {
+  text-decoration: none;
+}
+#solutions .allsolutions div a .container {
+  border-radius: 50px;
+}
+#solutions .allsolutions .row i {
+  font-size: 50px;
+}
+#solutions .allsolutions .container p {
+  font-size: 16px;
+}
+
+#solutions #software,
+#solutions #marketing,
+#solutions #digitalMarketing {
+  transition: color 0.3s;
+}
+#solutions #software p {
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Reels
+--------------------------------------------------------------*/
+/* #reels {
+  background: var(--grey);
+  color: white;
+} */
+
+#reels iframe {
+  height: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#reels h3 {
+  font-size: 48px;
+  color: var(--font-main);
+}
+#reels .card .card-title a {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  color: var(--font-main);
+}
+
+#reels .card-body p {
+  font-size: 20px;
+}
+#reels .mini-cards .card {
+  transition: transform 0.4s;
+}
+#reels .mini-cards .card:hover {
+  transform: scale(1.05);
+}
+
+#reels .mini-cards img {
+  height: 150px;
+}
+#reels .mini-cards .card-body h5 {
+  font-size: 14px;
+}
+#reels .mini-cards .card-body p {
+  font-size: 10px;
+}
+#reels .mini-cards .card-body a {
+  font-size: 10px;
+}
+#reels .card .reelCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reels .card .reelCover:hover {
+  cursor: pointer;
+}
+#reels .card .reelCover i {
+  font-size: 30px;
+}
+
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+
+#portfolio .container > p {
+  font-size: 20px;
+}
+#portfolio a.btn {
+  border-radius: 8px;
+}
+#portfolio .swiper-slide .card {
+  border: none;
+  border-radius: 12px;
+  margin: 10px auto;
+}
+#portfolio h5 {
+  font-size: 20px;
+}
+#portfolio .swiper-slide p {
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+
+#team .container > p {
+  font-size: 20px;
+}
+#team .swiper-slide > div {
+  position: relative;
+  overflow: hidden;
+}
+#team .swiper-slide .layout-1,
+#team .swiper-slide .layout-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#team .swiper-slide .layout-1 {
+  background: linear-gradient(transparent, var(--main));
+  color: var(--font-dark);
+}
+#team .swiper-slide .layout-1 h5 {
+  font-size: 20px;
+}
+#team .swiper-slide .layout-1 p {
+  font-size: 16px;
+}
+#team .swiper-slide .layout-2 {
+  transition: all 0.4s;
+  opacity: 0;
+}
+#team .swiper-slide:hover .layout-2 {
+  background: linear-gradient(0deg, transparent, #2a286b70);
+  opacity: 1;
+}
+#team .swiper-slide .layout-2 a {
+  color: var(--font-main);
+  font-size: 30px;
+  transition: color 0.3s;
+}
+#team .swiper-slide .layout-2 a:hover {
+  cursor: pointer;
+  color: var(--main);
+}
+/*--------------------------------------------------------------
+# world
+--------------------------------------------------------------*/
+#world {
+  background-color: white;
+  color: var(--black);
+  position: relative;
+  overflow-y: hidden;
+}
+
+#world p {
+  font-size: 20px;
+}
+#particle-js canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(230, 133, 34, 0.5); */
+}
+/* #particle-js {
+
+} */
+
+/*--------------------------------------------------------------
+# ready
+--------------------------------------------------------------*/
+
+#ready a.btn {
+  background-color: var(--fulvous);
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+footer {
+  /* background-image: url(../images/footer.webp); */
+  background-image: linear-gradient(180deg, #652d90 0%, #381955 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: var(--black);
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.05);
+}
+footer .copyright {
+  font-size: 12px;
+}
+footer hr {
+  opacity: 1;
+  border-radius: 15px;
+  /* border-width: 2px; */
+  border-color: var(--new-gold);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Page
+--------------------------------------------------------------*/
+#portfolioAll {
+  background-image: url(../images/ourPortfolio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolioAll h1,
+#portfolioAll p,
+#portfolioAll a {
+  color: var(--font-main);
+}
+#portfolioAll h1 {
+  font-size: 48px;
+}
+#portfolioAll p {
+  font-size: 20px;
+}
+#portfolioAll a {
+  text-decoration: none;
+  font-size: 20px;
+}
+#projects .card {
+  border-radius: 16px;
+  border: none;
+}
+
+/*--------------------------------------------------------------
+# Reels Page
+--------------------------------------------------------------*/
+#reelAll {
+  background-image: url(../images/reels.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#reelAll h1,
+#reelAll p,
+#reelAll a {
+  color: var(--font-main);
+}
+
+#reelAll p {
+  font-size: 20px;
+}
+#reelAll a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#allReels .card {
+  border-radius: 16px;
+}
+#allReels .card iframe {
+  height: 300px;
+  border-radius: 16px;
+}
+#allReels .card .blackout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 310px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#allReels .card .blackout:hover {
+  cursor: pointer;
+}
+#allReels .card .blackout i {
+  font-size: 65px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.showReel {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 65465187496548;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.showReel iframe {
+  width: 80%;
+  height: 80%;
+}
+.hidden {
+  display: none;
+}
+.bigScreen:hover {
+  cursor: pointer;
+}
+/*--------------------------------------------------------------
+# contact-us page
+--------------------------------------------------------------*/
+
+#contact-us iframe {
+  width: 100%;
+  height: 400px;
+  transition: all 0.3s;
+}
+/* contact us thanks message */
+
+.thank-message .show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(176, 139, 52, 0.3);
+  width: 100vw;
+  height: 100vh;
+  color: var(--new-gold);
+}
+.thank-message .show .row {
+  border-radius: 16px;
+}
+.thank-message .show .row:first-child {
+  background-color: white;
+}
+.thank-message .show .row a.btn {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+.thank-message .show .row button.btn {
+  background: var(--lm-body);
+  border-radius: 10px;
+  color: var(--black);
+}
+.thank-message .show .row i {
+  font-size: 80px;
+}
+/*--------------------------------------------------------------
+# register page
+--------------------------------------------------------------*/
+#register small a,
+#register form label span {
+  color: var(--fulvous);
+}
+
+#register .col-lg-7 {
+  height: 85vh;
+  overflow-y: scroll;
+}
+#register .col-lg-7::-webkit-scrollbar {
+  width: 8px;
+}
+#register .col-lg-7::-webkit-scrollbar-track {
+  background: #ababab;
+  border-radius: 20px;
+}
+#register .col-lg-7::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 20px;
+}
+
+#register .col-lg-7 {
+  background-image: url(../images/bg-rgister.png);
+  background-position: right center;
+}
+/* #login form h1, */
+#register form h1 {
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#register .auth a,
+#register form .form-control:not([type="file"]),
+#register form .form-select,
+#register form .input-group {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#register form .input-group label {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+#register form .input-group input[type="file"]::file-selector-button {
+  display: none;
+}
+
+#register form button {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+/*--------------------------------------------------------------
+# Project page
+--------------------------------------------------------------*/
+#projectImg a.btn {
+  background-color: var(--font-main);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  padding: var(--btn-back);
+  font-size: 16px;
+}
+#projectImg .d-flex {
+  color: var(--black);
+}
+#projectImg button {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  color: var(--font-main);
+}
+#projectImg .main-image img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+#ourProjects h2 {
+  position: relative;
+}
+#ourProjects h2::before,
+#ourProjects h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+#ourProjects h2::before {
+  left: 0;
+}
+#ourProjects h2::after {
+  right: 0;
+}
+#ourProjects .swiper-slide .card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#ourProjects .swiper-slide .card a.btn {
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+#ourProjects .swiper-slide:hover {
+  cursor: grab;
+}
+#ourProjects .swiper-slide:active {
+  cursor: grabbing;
+}
+#project-content h3 {
+  font-size: 20px;
+}
+#project-content p,
+#project-content ol li {
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# Category Page fady
+--------------------------------------------------------------*/
+#category {
+  /* background-image: var(--linear); */
+  background-color: #494b52;
+  background-image: url("../images/Group-1000003898.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#category .row1 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/* #category .content {
+  text-align: center;
+} */
+#category .content h2 {
+  color: var(--font-main);
+  font-size: 64px;
+}
+#category .content p {
+  color: var(--font-main);
+  font-size: 20px;
+}
+#category .button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-image: var(--linear);
+  border-radius: 100px;
+  cursor: pointer;
+}
+#category .lable {
+  line-height: 22px;
+  font-size: 16px;
+  color: var(--font-main);
+}
+#category a.btn1 {
+  background-image: var(--linear);
+  color: var(--font-main);
+  border: none;
+}
+#category a.btn2 {
+  background-color: var(--font-dark);
+  color: var(--main);
+  border: none;
+}
+#category .border-icon {
+  background-color: #c4d1f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 7px 6px;
+  margin-left: -5px;
+}
+#category .card {
+  border-radius: 12px;
+}
+#category .card img {
+  border-radius: 6px;
+}
+#category .card-body {
+  padding: 5px 15px;
+}
+/*--------------------------------------------------------------
+# JobSearch page
+--------------------------------------------------------------*/
+#jobSearch {
+  background-image: url(../images/jobCategories.png);
+  background-size: cover;
+  background-position: right center;
+  color: var(--font-main);
+}
+
+#jobSearch form .form-select {
+  border-radius: 10px;
+}
+#jobSearch form option {
+  line-height: 50px;
+}
+#jobSearch form button {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+#jobResults {
+  min-height: 40vh;
+  background-color: var(--lm-body);
+}
+
+#jobResults .top-text a.btn {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+/* #jobResults .card {
+  border-radius: 12px;
+} */
+
+#jobResults .card img {
+  height: 120px;
+}
+#jobResults a {
+  color: var(--black);
+  text-decoration: none;
+}
+#jobResults a .card-footer {
+  background: var(--black);
+  color: var(--font-main);
+}
+#jobResults .card-body {
+  color: var(--black);
+}
+
+#jobResults .allsolutions div a {
+  text-decoration: none;
+}
+#jobResults .allsolutions div a .container {
+  border-radius: 20px;
+}
+#jobResults .allsolutions .row i {
+  font-size: 50px;
+}
+#jobResults .allsolutions .container p {
+  font-size: 16px;
+}
+#jobResults #software,
+#jobResults #marketing,
+#jobResults #digitalMarketing {
+  transition: none;
+}
+
+#jobResults #software p {
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Job Details Page
+--------------------------------------------------------------*/
+#jobDetails {
+  background-image: url(../images/view-job.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#jobDetails h2 a {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+#jobDetails p {
+  font-size: 20px;
+}
+#jobDetails .row div i,
+#jobDetails .row div span {
+  font-size: 20px;
+}
+
+#jobReq .col-lg-3 .btn:first-child {
+  /* background-color: var(--fulvous); */
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  color: black;
+  /* border-radius: 50px; */
+}
+#summary .layout,
+#apply .layout {
+  /* position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999999999991; */
+  overflow-y: scroll;
+}
+
+#summary .layout::-webkit-scrollbar,
+#apply .layout::-webkit-scrollbar {
+  display: none;
+}
+#summary .layout .container-fluid i,
+#apply .layout .container-fluid i {
+  font-size: 32px;
+}
+#summary .layout .container-fluid i:hover,
+#apply .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#apply .container {
+  z-index: 99999999999992;
+  border-radius: 12px;
+}
+
+#apply form label.d-block {
+  cursor: pointer;
+}
+#apply form button.btn {
+  background-color: var(--new-gold);
+  color: var(--font-main);
+}
+
+#summary span.form-control {
+  background-color: transparent;
+  border: none;
+}
+#summary button.btn.submit {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  color: var(--font-main);
+  border-radius: 12px;
+}
+
+#summary a.btn {
+  border-radius: 12px;
+}
+#summary .user-summary {
+  position: relative;
+  z-index: 99999999999992;
+}
+#summary #exit {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+#apply .invalid {
+  border: 2px solid red !important;
+}
+/*--------------------------------------------------------------
+# Access page
+--------------------------------------------------------------*/
+#access {
+  background: var(--linear);
+}
+#access > .container-fluid {
+  background: url("../images/Group-1000003898.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 80vh;
+}
+#access .card .nav-underline .nav-link {
+  border: none;
+  font-size: 24px;
+}
+
+#access .card .tab-content form button {
+  background: var(--linear);
+  background-repeat: none;
+  border: none;
+}
+#access .card .nav-underline .nav-link.active,
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover {
+  border: none;
+  text-decoration: underline;
+}
+#access input[type="checkbox"] {
+  background-color: rgb(233, 233, 233);
+}
+#access input:checked[type="checkbox"] {
+  background-color: rgb(141, 141, 141);
+}
+/*--------------------------------------------------------------
+# Extra Plugins
+--------------------------------------------------------------*/
+/* === (swiper) === */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#portfolio .more-projects a {
+  background: var(--linear);
+  background-repeat: no-repeat;
+  color: var(--font-main);
+}
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/*--------------------------------------------------------------
+# profile & Edit profile pages
+--------------------------------------------------------------*/
+#profile {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+
+#profile a {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+
+#user-profile .navbar .edt-pro a.btn,
+#user-profile .navbar .upd-pro button.btn {
+  background-image: var(--linear);
+  color: var(--font-main);
+  background-repeat: no-repeat;
+}
+
+#user-profile .navbar .upd-pro a.btn .container {
+  background-image: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#user-profile input:read-only:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+
+#user-profile .form-control:not([type="file"]) {
+  border-radius: 12px;
+}
+#user-profile .input-group input {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#user-profile .input-group label {
+  background-color: var(--black);
+  color: var(--font-main);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+#user-profile .form-control::file-selector-button {
+  display: none;
+}
+#user-profile button {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+#user-profile a {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+/*--------------------------------------------------------------
+# TrackApplications page
+--------------------------------------------------------------*/
+#trackApplications {
+  background-image: url(../images/jobCategories.png);
+  background-size: cover;
+}
+
+#trackApplications .container-fluid {
+  color: var(--font-dark);
+}
+
+#jobCards {
+  background-color: var(--lm-body);
+  min-height: 60vh;
+}
+#jobCards .card {
+  border: none;
+}
+
+#jobCards button.card-footer {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+
+/* ===================================== */
+#jobCards .viewed {
+  background-color: #bee2fd;
+  color: #0d70ba;
+}
+#jobCards .consideration {
+  background-color: #fdf1bb;
+  color: #916000;
+}
+#jobCards .notSelected {
+  color: #ff5c00;
+  background-color: #ffd1b8;
+}
+#jobCards .notViewed {
+  color: #606060;
+  background-color: #dddddd;
+}
+#jobCards .selected {
+  color: #34a300;
+  background-color: #c7f0ca;
+}
+#jobCards .closed {
+  background-color: #e72828;
+  color: #fffcfc;
+}
+/*--------------------------------------------------------------
+# solutions pages
+--------------------------------------------------------------*/
+#softwareHouseHero {
+  background-image: url(../images/softwareHouseHero.webp);
+  background-size: cover;
+  background-position: center bottom;
+  color: var(--font-main);
+}
+
+#softwareHouse {
+  background-image: url(../images/softwareHouseHeroInfo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Marketing-BusinessHouse {
+  background-image: url(../images/MarketingBusinessBG.webp);
+  background-size: cover;
+  background-position: center center;
+}
+
+#MarketingBusinessHero {
+  background-image: url(../images/MarketingBusinessHero.webp);
+  background-size: cover;
+  background-position: center right;
+  color: var(--font-main);
+}
+#DigitalMarketingHouseHero {
+  background-image: url(../images/DigitalMarketingHouse.webp);
+  background-size: cover;
+  background-position: center right;
+  color: var(--font-main);
+}
+#DigitalMarketingHouse {
+  background-image: url(../images/DigitalMarketingHouse2.webp);
+  background-size: cover;
+  background-position: center center;
+}
+#DigitalMarketingHouseCard2 {
+  background-image: url(../images/DigitalMarketingHouseCard2.webp);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+/*--------------------------------------------------------------
+# Resources
+--------------------------------------------------------------*/
+#resources {
+  background-image: url(../images/resourcesHero.png);
+  background-size: cover;
+  color: var(--font-main);
+}
+
+#caseStudy swiper .card {
+  border: none;
+  border-radius: 12px;
+}
+
+#events {
+  background: var(--black);
+  color: var(--font-dark);
+}
+
+#blog .position-absolute {
+  color: var(--font-main);
+}
+/*--------------------------------------------------------------
+# Error 404 page
+--------------------------------------------------------------*/
+
+#error404 p a {
+  border-radius: 8px;
+}
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+@media (max-width: 1440px) {
+  #allReels .card .blackout {
+    height: 260px;
+  }
+  #jobResults #marketing p,
+  #solutions #marketing p {
+    margin-bottom: 5px;
+  }
+  #jobResults #marketing {
+    padding: 20px 24px !important;
+  }
+  #solutions #marketing {
+    padding: 12px 24px !important;
+  }
+  #register .col-lg-7 {
+    height: 92vh;
+  }
+}
+@media (max-width: 1200px) {
+  #DigitalMarketingHouseCard2 {
+    background-image: url(../images/DigitalMarketingHouseCard2-mobile.webp);
+  }
+  #allReels .card .blackout {
+    height: 220px;
+  }
+  #jobResults #marketing,
+  #solutions #marketing {
+    padding: 20px 24px !important;
+  }
+  #jobResults #software,
+  #solutions #software {
+    padding: 28px 24px !important;
+  }
+  #register .col-lg-7 {
+    height: 80vh;
+  }
+}
+@media (max-width: 992px) {
+  #jobResults #marketing,
+  #solutions #marketing {
+    padding: 24px 24px !important;
+  }
+  #jobResults #software,
+  #solutions #software {
+    padding: 14px 24px !important;
+  }
+  #reels .mini-cards .col-sm-6:nth-child(3),
+  #reels .mini-cards .col-sm-6:nth-child(4) {
+    display: none;
+  }
+  #contact-us form button.btn {
+    width: 100%;
+  }
+
+  #ourProjects h2::before,
+  #ourProjects h2::after {
+    width: 30%;
+  }
+  #jobDetails {
+    background-size: cover;
+  }
+  footer .nav-item a.scroll-top {
+    width: 10%;
+    margin: auto;
+  }
+  #allReels .card .blackout {
+    height: 260px;
+  }
+  #register .col-lg-7 {
+    height: auto !important;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 768px) {
+  #jobResults #software,
+  #solutions #software {
+    padding: 24px 24px !important;
+  }
+  #reels iframe {
+    max-height: 300px;
+  }
+  #reels .card-body h5,
+  #reels .card-body p {
+    font-size: 16px;
+  }
+
+  #ourProjects h2::before,
+  #ourProjects h2::after {
+    width: 25%;
+  }
+  .content h2 {
+    font-size: 54px;
+    font-weight: 540;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .broder-MYbtn {
+    justify-content: space-between !important;
+  }
+  #DigitalMarketingHouseCard2 {
+    background-size: cover;
+    background-position: right top;
+  }
+  #DigitalMarketingHouseCard2 .container-fluid {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (max-width: 576px) {
+  #portfolio .swiper .card {
+    width: 80%;
+  }
+  footer .nav-item a.scroll-top {
+    width: 15%;
+    margin: auto;
+  }
+  #ourProjects h2::before,
+  #ourProjects h2::after {
+    width: 20%;
+  }
+  .broder-MYbtn {
+    justify-content: space-around !important;
+  }
+  #category .content h2 {
+    font-size: 45px;
+  }
+  #jobResults .card img {
+    height: auto;
+  }
+  #jobResults .card h2 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  #allReels .card .blackout {
+    height: 260px;
+  }
+  #aboutCard-4 .position-absolute h4 {
+    margin-bottom: 4px;
+  }
+  #aboutCard-4 .position-absolute p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+}

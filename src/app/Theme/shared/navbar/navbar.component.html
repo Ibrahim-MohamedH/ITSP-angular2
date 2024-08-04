@@ -1,0 +1,252 @@
+<header>
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <a href="/ar" class="btn text-reset" *ngIf="currentLang == 'en'">
+            اللغة العربية
+          </a>
+          <a href="/en" class="btn text-reset" *ngIf="currentLang == 'ar'">
+            English
+          </a>
+        </div>
+        <!-- <div class="col-6">
+          <ul
+            class="d-flex list-unstyled justify-content-end ms-auto mb-0 py-2"
+          >
+            <li class="nav-item me-2">
+              <a class="nav-link" aria-current="page" routerLink="/{{ currentLang }}/login"
+                >LOGIN</a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" routerLink="/{{ currentLang }}/register">SIGN UP</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg px-xl-4 px-lg-1 px-md-1 px-2">
+    <div class="container px-xl-2 px-lg-1 px-2">
+      <a class="navbar-brand fw-bold" routerLink="/{{ currentLang }}">
+        <img
+          src="../../../../assets/images/ITSP_logo_black.png"
+          width="100"
+          alt="ITSP Company Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars fs-3"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item me-2">
+            <a
+              class="nav-link px-lg-2 px-1"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              aria-current="page"
+              routerLink="/{{ currentLang }}/home"
+              >{{ "navbar.home" | translate }}</a
+            >
+
+          </li>
+          <li class="nav-item me-2 dropdown mb-lg-0 mb-2">
+            <a
+              class="nav-link pe-0 d-inline px-lg-2 px-1"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/{{ currentLang }}/aboutUs"
+              >{{ "navbar.About Us.title" | translate }}</a
+            >
+            <a
+              href="#"
+              aria-label="About us section"
+              class="nav-link d-inline dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/AboutUs-hero"
+                  class="dropdown-item"
+                  >{{ "navbar.About Us.The Story Behind ITSP!" | translate }}</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/aboutCard-1"
+                  class="dropdown-item"
+                  >{{ "navbar.About Us.Get to Know us!" | translate }}</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/aboutCard-2"
+                  class="dropdown-item"
+                  >{{
+                    "navbar.About Us.Philosophy & Methodology" | translate
+                  }}</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/aboutCard-3"
+                  class="dropdown-item"
+                  >{{
+                    "navbar.About Us.Why to choose ITSP Group?" | translate
+                  }}</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/aboutCard-4"
+                  class="dropdown-item"
+                  >{{ "navbar.About Us.Our Quality Standards" | translate }}</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/{{ currentLang }}/aboutUs/aboutCard-7"
+                  class="dropdown-item"
+                  >{{ "navbar.About Us.Our Dream Team" | translate }}</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item me-2 dropdown">
+            <a
+              class="nav-link pe-0 d-inline px-lg-2 px-1 dropdown-toggle"
+              href=""
+              data-bs-toggle="dropdown"
+              routerLinkActive="active"
+              aria-expanded="false"
+              >{{ "navbar.Solutions.title" | translate }}</a
+            >
+
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="/{{ currentLang }}/software-house"
+                  >{{ "navbar.Solutions.Software House" | translate }}</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="/{{ currentLang }}/marketing-business-house"
+                  >{{
+                    "navbar.Solutions.Marketing & Business House" | translate
+                  }}</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="/{{ currentLang }}/digital-marketing"
+                  >{{
+                    "navbar.Solutions.Digital Marketing House" | translate
+                  }}</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item me-2 dropdown">
+            <a
+              class="nav-link d-inline pe-0 px-lg-2 px-1"
+              [routerLink]="'/resources' | localize"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="nav-link d-inline ps-0 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href=""
+                  class="dropdown-item"
+                  (click)="sectionNav('resources', 'caseStudy')"
+                  >Case Study</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="dropdown-item"
+                  (click)="sectionNav('resources', 'blog')"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="dropdown-item"
+                  (click)="sectionNav('resources', 'events')"
+                  >Events</a
+                >
+              </li>
+            </ul>
+          </li> -->
+          <li class="nav-item me-2">
+            <a
+              class="nav-link px-lg-2 px-1"
+              routerLink="/{{ currentLang }}/careers"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >{{ "navbar.Careers" | translate }}</a
+            >
+          </li>
+          <!-- <li class="nav-item me-2">
+            <a
+              class="nav-link px-lg-2 px-1"
+              [routerLink]="'/portfolio' | localize"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item me-2">
+            <a
+              class="nav-link px-lg-2 px-1"
+              [routerLink]="'/reels' | localize"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >Reels</a
+            >
+          </li> -->
+          <li class="nav-item me-2">
+            <a
+              class="nav-link px-lg-2 px-1"
+              routerLink="/{{ currentLang }}/contact"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >{{ "navbar.Contact Us" | translate }}</a
+            >
+          </li>
+          <!--
+        <li class="nav-item me-2 d-flex align-items-center">
+          <button class="btn themeBtn light px-lg-2 px-1 py-1">
+            <i class="fa-regular fa-lightbulb"></i>
+          </button>
+        </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

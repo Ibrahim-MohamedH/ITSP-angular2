@@ -1,0 +1,91 @@
+#hero h1 {
+  color: var(--semi-gold);
+}
+#hero .horizontal {
+  border: 2px dashed rgb(255, 255, 255);
+  width: 50%;
+  opacity: 0.9;
+}
+
+#hero p {
+  color: white;
+}
+
+#hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+#solutions .container-fluid {
+  min-height: 80vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#world {
+  background-image: url(../../../../assets/images/world2.webp);
+  background-attachment: fixed;
+  background-position: center top;
+  min-height: 80vh;
+}
+#hero a.text-decoration-none {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+}
+#hero a.text-decoration-none:hover {
+  cursor: pointer;
+}
+#career {
+  background-color: #f5f5f5;
+  color: white;
+}
+#career h2,
+#career p {
+  font-family: var(--font-headers);
+  color: rgba(93, 47, 131, 1);
+}
+#career a.btn {
+  color: black;
+  /* // background-color: var(--fulvous); */
+  background: linear-gradient(
+    180deg,
+    rgba(93, 47, 131, 0.2) 0%,
+    rgba(93, 47, 131, 0.8) 100%
+  );
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 150%;
+  transition: "background" 0.3s;
+}
+#career a.btn:hover {
+  /* // background-color: var(--new-gold); */
+  background-position: center bottom;
+
+  background-repeat: no-repeat;
+}
+#world {
+  color: white;
+}
+#world h2 {
+  color: var(--semi-gold);
+}
+
+@media (max-width: 576px) {
+  #ready .line {
+    height: 180px;
+    width: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 450px) {
+  #hero .container-fluid,
+  #hero {
+    min-height: 90vh;
+  }
+  #hero a.text-decoration-none {
+    left: 50px;
+  }
+}

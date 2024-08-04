@@ -1,0 +1,211 @@
+<app-navbar></app-navbar>
+<section id="projectImg" class="pt-5 pb-md-5 pb-2">
+  <div class="container">
+    <div class="row mb-5 align-items-center justify-content-between">
+      <div class="col-md-1 col-2 order-1 mb-sm-0 mb-2">
+        <a class="btn"><i class="fa-solid fa-chevron-left"></i></a>
+      </div>
+      <div class="col-md-9 col-sm-6 col-12 pe-0 order-sm-2 order-3">
+        <div class="d-flex align-items-center">
+          <img
+            src="./assets/images/ITSP_logo.png"
+            alt="ITSP Company Logo"
+            class="img-fluid me-3"
+          />
+          <div>
+            <p class="mb-0 fw-bold fs-5">visit Egypt project</p>
+            <p class="mb-0 fs-6">loc camp</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-4 text-end ps-0 order-sm-3 order-2 mb-sm-0 mb-2">
+        <button class="btn px-md-5 px-4 py-2">Share</button>
+      </div>
+    </div>
+    <div class="main-image text-center mb-3 pb-5">
+      <img class="img-fluid" src="./assets/images/Sidebar.png" alt="" />
+    </div>
+    <div class="thumb-images text-center mb-4">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-2 col-md-3 col-4 mb-sm-0 mb-3">
+          <img class="img-fluid" src="./assets/images/Sidebar-1.png" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mb-sm-0 mb-3">
+          <img class="img-fluid" src="./assets/images/Sidebar-2.png" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-4 mb-sm-0 mb-3">
+          <img class="img-fluid" src="./assets/images/Sidebar-3.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="project-content" class="pb-5 pt-md-5 pt-2">
+  <div class="container">
+    <div class="description mb-5">
+      <h3 class="mb-md-4 mb-2 fw-semibold">description:</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae
+        officiis, nobis molestias, neque quidem modi vitae provident delectus
+        rem possimus ipsum voluptatem tenetur facere facilis sunt amet non
+        beatae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus quae officiis, nobis molestias, neque quidem modi vitae
+        provident delectus rem possimus ipsum voluptatem tenetur facere facilis
+        sunt amet non beatae?
+      </p>
+    </div>
+    <div class="keyFeatures">
+      <h3 class="mb-4 fw-semibold">Key Features:</h3>
+      <ol class="ps-3">
+        <li>
+          Intuitive Navigation: Navigate effortlessly through the sleek and
+          intuitive interface, designed with user convenience in mind.
+          Streamlined menus and thoughtful layouts make interaction a breeze.
+        </li>
+        <li>
+          Modern Aesthetics: Experience a visual feast with a modern and
+          visually pleasing design. Crisp graphics, smooth transitions, and an
+          elegant color palette contribute to an aesthetic that not only pleases
+          the eye but enhances overall usability.
+        </li>
+        <li>
+          Responsive Design: Adaptability is key. Whether you're on a desktop,
+          tablet, or mobile device, [Project Name] UI ensures a consistent and
+          responsive experience, providing flexibility without compromising
+          functionality.
+        </li>
+        <li>
+          Advanced Functionality: Unlock a host of advanced features seamlessly
+          integrated into the UI. From innovative interactive elements to smart
+          functionalities, our UI is designed to elevate your project to the
+          next level.
+        </li>
+        <li>
+          Personalization: Tailor your experience to suit your preferences.
+          Customizable themes, layouts, and settings empower users to create an
+          interface that aligns with their individual style and needs.
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section id="ourProjects" class="pb-5">
+  <div class="container mb-3">
+    <h2 class="text-center">Our Projects</h2>
+  </div>
+  <div class="container-fluid">
+    <!-- ============================= -->
+    <swiper [config]="projects">
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-3">
+            <img
+              src="./assets/images/video.png"
+              class="card-img-top"
+              alt="project"
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">For-Students</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-2">
+            <img
+              src="./assets/images/video-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">Shela App</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-3">
+            <img
+              src="./assets/images/video-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">Visit Egypt</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-3">
+            <img
+              src="./assets/images/video.png"
+              class="card-img-top"
+              alt="project"
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">For-Students</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-3">
+            <img
+              src="./assets/images/video-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">Shela App</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template swiperSlide>
+        <a routerLink="/project/3" class="text-reset text-decoration-none">
+          <div class="card p-3 pb-0 my-3">
+            <img
+              src="./assets/images/video-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-start">
+              <h5 class="card-title fw-semibold">Visit Egypt</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur. Nulla felis consectetur
+                aliquet neque condimentum non. Sed sagittis libero
+              </p>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+    </swiper>
+    <!-- ============================= -->
+  </div>
+</section>
+<app-footer></app-footer>

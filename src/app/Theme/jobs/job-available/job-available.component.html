@@ -1,0 +1,141 @@
+<app-navbar></app-navbar>
+<!-- <section id="jobSearch">
+  <div class="container-fluid py-5">
+    <div class="container mb-5 pb-5 fw-bold">
+      <h1 class="pb-3 display-1 animate__animated animate__bounceInUp">
+        Discover Your Career at ITSP
+      </h1>
+      <form action="" class="col-lg-5 col-md-7 col-sm-9 col-12">
+        <div class="row align-items-end">
+          <div class="form-group mb-3 col-12">
+            <label for="searchInput" class="form-label">Job Title</label>
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              class="form-control form-control-lg"
+              placeholder="Search by job title"
+              [(ngModel)]="searchQuery"
+            />
+          </div>
+          <div class="form-group mb-3 col-12">
+            <label for="categoryInput" class="form-label">category</label>
+            <select
+              class="form-select form-select-lg"
+              name="category"
+              id="categoryInput"
+            >
+              <option value="software house">Software House</option>
+              <option value="business">Business</option>
+              <option value="marketing">Marketing</option>
+              <option value="e-marketing">E-Marketing</option>
+            </select>
+          </div>
+          <div class="form-group mb-3 col-12">
+            <label for="jobStatusInput" class="form-label">Job Status</label>
+            <select
+              class="form-select form-select-lg"
+              name="status"
+              id="jobStatusInput"
+            >
+              <option value="on-site">on-site</option>
+              <option value="remotely">remotely</option>
+              <option value="hybrid">hybrid</option>
+            </select>
+          </div>
+          <div class="form-group col-12 text-center">
+            <button class="btn rounded-pill fw-semibold px-4">
+              <i class="fa-solid fa-magnifying-glass me-2"></i> Search
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section> -->
+<section id="jobResults" class="py-5">
+  <div class="container" *ngIf="!loading">
+    <div class="row" *ngIf="total != 0">
+      <!-- <div class="col-12 text-center mb-4 top-text">
+        <h2 class="col-lg-6 col-md-8 col-12 mx-auto fs-1 fw-bold">
+          {{ category }}
+        </h2>
+        <p class="col-lg-5 col-md-7 mx-auto">
+          {{ slogan }}
+        </p>
+        <a routerLink="/login" class="btn rounded-3 px-4 py-2"
+          >View Applications</a
+        >
+      </div> -->
+      <!-- Start of card -->
+      <div
+        class="col-lg-6 mb-3"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        *ngFor="let job of jobs"
+      >
+        <div class="card mb-3 h-100 flex-column">
+          <!-- <div class="col-4 p-3 text-center">
+              <img src="{{ job.image }}" class="img-fluid rounded-3" />
+            </div> -->
+          <div class="col-12">
+            <div class="card-body">
+              <h2 class="card-title">{{ job.postion }}</h2>
+              <p class="card-text">
+                {{ job.discription.split("-")[1] + "..." }}
+              </p>
+            </div>
+          </div>
+          <div class="col-12 mt-auto">
+            <a routerLink="/{{ currentLang }}/job/{{ job.id }}"
+              ><div class="card-footer text-center">
+                {{ "JobAvailable.viewJob" | translate }}
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End of card -->
+    </div>
+    <div class="card-body" *ngIf="total != 0">
+      <div class="row">
+        <div class="col-md-12">
+          <pagination
+            [currentPage]="currentPage"
+            [totalPages]="totalPages"
+            (pageChange)="onPageChange($event)"
+          ></pagination>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="total == 0">
+      <div class="col-12 text-center">
+        <h2 class="alerting">No jobs available for this category yet!</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="loading">
+    <div class="col-lg-6 mb-3">
+      <div class="card mb-3 placeholder-glow">
+        <div class="row g-0 align-items-center">
+          <div class="col-12">
+            <div class="card-body">
+              <h2 class="card-title placeholder col-7"></h2>
+              <p class="card-text placeholder col-12"></p>
+              <p class="card-text placeholder col-12"></p>
+              <p class="card-text placeholder col-6"></p>
+            </div>
+          </div>
+          <div class="col-12">
+            <a
+              ><div class="card-footer text-center">
+                <span class="placeholder bg-light col-3 mx-auto"></span></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

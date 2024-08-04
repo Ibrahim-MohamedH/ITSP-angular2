@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.top-bar {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+nav {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav .navbar-toggler:focus {
+  box-shadow: 0 0 0 2px var(--new-gold);
+}
+nav .navbar-toggler i {
+  color: var(--new-gold);
+}
+nav .navbar-nav .nav-link,
+nav .navbar-nav .nav-link.show {
+  color: var(--black);
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+nav .navbar-nav .nav-link:hover {
+  color: #652d90;
+}
+nav .navbar-nav .nav-link.active {
+  color: #652d90;
+}
+nav .navbar-nav .nav-item .dropdown-menu.show {
+  background-color: var(--black);
+}
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: var(--font-main);
+}
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+}
+nav .nav-item button.btn {
+  background-color: var(--font-main);
+}
+nav .nav-item a.access span {
+  background: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

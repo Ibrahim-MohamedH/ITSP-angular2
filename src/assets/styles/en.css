@@ -1,0 +1,145 @@
+@import url(../vendors/bootstrap/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/* @font-face {
+  font-family: "MBF Space";
+  src: url("../vendors/fonts/MBFSpace.ttf");
+} */
+:root {
+  --font-family: "Lato", sans-serif;
+  --font-header: "Roboto", sans-serif;
+}
+* {
+  font-family: var(--font-family);
+}
+
+#hero h1,
+#AboutUs-hero h1,
+#aboutCard-1 h2,
+#aboutCard-2 h2,
+#aboutCard-2 h3,
+#aboutCard-3 h2,
+#aboutCard-4 h2,
+#aboutCard-5 h3,
+#aboutCard-6 h3,
+#aboutCard-6 h4,
+#aboutCard-7 h2,
+#solutions h2,
+#solutions .allsolutions h5,
+#reels h2,
+#reels h2 span,
+#portfolio h2,
+#team h2,
+#team h2 span,
+#world h2,
+#portfolioAll h1,
+#reelAll h1,
+#contact-us h1,
+#register form h1 span,
+#ourProjects h2,
+#ourProjects .swiper-slide .card h5,
+#jobSearch h1,
+#jobResults .top-text h2,
+#jobResults .card-body h2,
+#jobResults #software h5 span,
+#jobResults #marketing h5 span,
+#jobResults #digitalMarketing h5 span,
+#jobDetails h2,
+#jobReq h2,
+#summary .layout h2 span,
+#apply .layout h2 span,
+#profile h1,
+#DigitalMarketingHouseHero h1,
+#MarketingBusinessHero h1,
+#softwareHouseHero h1,
+#softwareHouse h2 span,
+#Marketing-BusinessHouse h2 span,
+#DigitalMarketingHouse h4 span,
+#resources h1,
+#caseStudy h2,
+#caseStudy swiper .card h5,
+#blog h2,
+#events h2,
+#events h3,
+#error404 h1 {
+  font-family: var(--font-header);
+}
+*::first-letter {
+  text-transform: capitalize;
+}
+#aboutCard-2 .card {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: white;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px rgba(177, 142, 52, 1);
+}
+#aboutCard-3 .card {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+#aboutCard-4 .card {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+#softwareHouse img {
+  filter: drop-shadow(-8px 0px 5px var(--new-gold));
+}
+#contact-us button.btn:disabled {
+  background: linear-gradient(
+    90deg,
+    rgba(176, 139, 52, 0) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  border: none;
+}
+#contact-us form button.btn {
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(176, 139, 52, 0.4) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#contact-us {
+  background-image: url(../../../../assets/images/contactUsbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#contact-us label {
+  color: white;
+}
+footer a:before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 4px;
+  height: 70%;
+}

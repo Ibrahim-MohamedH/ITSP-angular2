@@ -1,0 +1,276 @@
+@import url(../vendors/bootstrap/css/bootstrap.rtl.min.css);
+/* @import url(https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Almarai:wght@300;400;700;800&display=swap); */
+/* @font-face {
+  font-family: "adobe arabic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/adobe/22016-adobearabic.ttf") format("truetype");
+} */
+:root {
+  /* --font-family: "Times New Roman", Times, serif; */
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-headers: Arial, Helvetica, sans-serif;
+}
+* {
+  direction: rtl;
+  font-family: var(--font-family);
+}
+#hero {
+  background-image: url(../images/homeHero-rtl.webp);
+  background-position: center left;
+}
+#hero .container-fluid {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+#hero a.btn {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 91, 180, 0) 0%,
+    rgba(233, 211, 96, 0.3) 100%
+  );
+  background-repeat: no-repeat;
+}
+#hero h1 {
+  font-size: 80px !important;
+}
+#solutions {
+  background-image: url(../images/solution-rtl.webp);
+}
+#solutions h2 {
+  font-size: 95px;
+}
+/* #world h2 {
+  font-size: 60px;
+} */
+#AboutUs-hero {
+  background-image: url(../images/AboutUs_hero-rtl.webp);
+}
+#aboutCard-1 {
+  background-image: url(../images/aboutCard-1-rtl.webp);
+}
+#aboutCard-3 {
+  background-image: url(../images/aboutCard-3-rtl.webp);
+}
+
+#softwareHouseHero {
+  background-image: url(../images/softwareHouseHero-rtl.webp);
+}
+#softwareHouse {
+  background-image: url(../images/softwareHouseHeroInfo-rtl.webp);
+}
+#MarketingBusinessHero {
+  background-image: url(../images/MarketingBusinessHero-rtl.webp);
+  background-position: center left;
+}
+
+#Marketing-BusinessHouse .swiper-slide:not(.swiper-slide-active) .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(56, 25, 85, 0.6) 0%,
+    rgba(101, 45, 144, 0.6) 100%
+  );
+}
+
+#Marketing-BusinessHouse .swiper-slide:not(.swiper-slide-active) .card {
+  transform: rotateY(-5deg);
+}
+
+#Marketing-BusinessHouse .swiper-slide-active .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+}
+
+#Marketing-BusinessHouse .swiper-slide-prev .card {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 142, 52, 0.5) 0%,
+    rgba(177, 142, 52, 0.9) 100%
+  ) !important;
+}
+
+#Marketing-BusinessHouse .swiper-slide-next .card {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 142, 52, 0.9) 0%,
+    rgba(177, 142, 52, 0.5) 100%
+  ) !important;
+}
+#Marketing-BusinessHouse .swiper-slide.swiper-slide-next .card,
+#Marketing-BusinessHouse .swiper-slide-next + .swiper-slide .card {
+  transform-style: preserve-3d;
+  transform: rotateY(5deg);
+}
+#DigitalMarketingHouseHero {
+  background-image: url(../images/DigitalMarketingHouse-rtl.webp);
+  background-position: center left;
+}
+#DigitalMarketingHouseCard2 {
+  background-image: url(../images/DigitalMarketingHouseCard2-rtl.webp);
+}
+#jobResults #digitalMarketing,
+#jobResults #software,
+#jobResults #marketing {
+  color: var(--font-main);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 215, 97, 0) 0%,
+    rgba(236, 215, 97, 0.6) 100%
+  );
+}
+#jobResults #digitalMarketing:hover,
+#jobResults #software:hover,
+#jobResults #marketing:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 215, 97, 0) 0%,
+    rgba(236, 215, 97, 0.6) 100%
+  );
+}
+footer a:before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 4px;
+  height: 70%;
+}
+#hero h1,
+#AboutUs-hero h1,
+#aboutCard-1 h2,
+#aboutCard-2 h2,
+#aboutCard-2 h3,
+#aboutCard-3 h2,
+#aboutCard-4 h2,
+#aboutCard-5 h3,
+#aboutCard-6 h3,
+#aboutCard-6 h4,
+#aboutCard-7 h2,
+#solutions h2,
+#solutions .allsolutions h5,
+#reels h2,
+#reels h2 span,
+#portfolio h2,
+#team h2,
+#team h2 span,
+#world h2,
+#portfolioAll h1,
+#reelAll h1,
+#contact-us h1,
+#register form h1 span,
+#ourProjects h2,
+#ourProjects .swiper-slide .card h5,
+#jobSearch h1,
+#jobResults .top-text h2,
+#jobResults .card-body h2,
+#jobResults #software h5 span,
+#jobResults #marketing h5 span,
+#jobResults #digitalMarketing h5 span,
+#jobDetails h2,
+#jobReq h2,
+#summary .layout h2 span,
+#apply .layout h2 span,
+#profile h1,
+#DigitalMarketingHouseHero h1,
+#MarketingBusinessHero h1,
+#softwareHouseHero h1,
+#softwareHouse h2 span,
+#Marketing-BusinessHouse h2 span,
+#DigitalMarketingHouse h4 span,
+#resources h1,
+#caseStudy h2,
+#caseStudy swiper .card h5,
+#blog h2,
+#events h2,
+#events h3,
+#error404 h1 {
+  font-family: var(--font-headers);
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  font-feature-settings: "liga", "kern";
+}
+#aboutCard-2 .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: white;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px rgba(177, 142, 52, 1);
+}
+#aboutCard-3 .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+#aboutCard-4 .card {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(236, 214, 97, 0.7) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+#softwareHouse img {
+  filter: drop-shadow(8px 0px 5px var(--new-gold));
+}
+#contact-us button.btn:disabled {
+  background: linear-gradient(
+    -90deg,
+    rgba(176, 139, 52, 0) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  border: none;
+}
+#contact-us form button.btn {
+  color: var(--font-main);
+  background: linear-gradient(
+    -90deg,
+    rgba(176, 139, 52, 0.4) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#contact-us {
+  background-image: url(../../../../assets/images/contactUsbg-rtl.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1200px) {
+  #DigitalMarketingHouseCard2 {
+    background-image: url(../images/DigitalMarketingHouseCard2-mobile-rtl.webp);
+  }
+}
+@media (max-width: 768px) {
+  #DigitalMarketingHouseCard2 {
+    background-position: left top;
+  }
+  #hero h1 {
+    font-size: 60px !important;
+  }
+}

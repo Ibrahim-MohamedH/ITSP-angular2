@@ -1,0 +1,27 @@
+#jobSearch {
+  overflow: hidden;
+}
+#jobSearch h1 {
+  color: var(--new-gold);
+}
+
+#jobSearch button.btn {
+  background: linear-gradient(
+    90deg,
+    rgba(176, 139, 52, 0) 0%,
+    rgba(176, 139, 52, 0.8) 100%
+  );
+  background-repeat: no-repeat;
+}
+#jobResults {
+  background-image: url(../../../../assets/images/careerSection.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#jobResults h2 {
+  color: var(--semi-gold);
+}
+#jobResults p {
+  color: white;
+}

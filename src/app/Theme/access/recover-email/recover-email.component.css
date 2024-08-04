@@ -1,0 +1,29 @@
+#recover-password a,
+#recover-password form label span {
+  color: var(--fulvous);
+}
+#recover-password .recover-passwordForm {
+  background-image: url(../../../../assets/images/bg-rgister.png);
+  background-position: right center;
+}
+#recover-password form h1 span {
+  font-family: var(--font-headers);
+}
+#recover-password .auth a,
+#recover-password form .form-control:not([type="file"]),
+#recover-password form .form-select,
+#recover-password form .input-group {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#recover-password form .input-group label {
+  background-color: var(--black);
+  color: var(--font-main);
+}
+#recover-password form button {
+  background-color: var(--fulvous);
+  color: var(--font-main);
+}
+#recover-password form a.forget {
+  color: var(--fulvous);
+}

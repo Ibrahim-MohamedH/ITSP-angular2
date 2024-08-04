@@ -1,0 +1,406 @@
+<app-navbar></app-navbar>
+<section id="trackApplications">
+  <div class="container-fluid py-5">
+    <div class="container mb-5 py-5">
+      <h1 class="fw-bold text-center display-5">Track Applications</h1>
+    </div>
+  </div>
+</section>
+<section id="jobCards" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Start of card -->
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">Product Designer</h2>
+                <div class="btn viewed py-1 d-inline-block mb-2">viewed</div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">4000 - 6000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of card -->
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">visual Designer</h2>
+                <div class="btn consideration py-1 d-inline-block mb-2">
+                  In consideration
+                </div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">2000-5000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">UI/UX designer</h2>
+                <div class="btn consideration py-1 d-inline-block mb-2">
+                  In consideration
+                </div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">11000-14000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">
+                  User reaches expert
+                </h2>
+                <div class="btn notSelected py-1 d-inline-block mb-2">
+                  Not Selected
+                </div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">12000-14000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">UI designer</h2>
+                <div class="btn notViewed py-1 d-inline-block mb-2">
+                  Not Viewed
+                </div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">15000-17000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">Product Designer</h2>
+
+                <div class="btn selected py-1 d-inline-block mb-2">
+                  Selected
+                </div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">4000 - 6000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="card mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 col-sm-4 col-12 text-center p-lg-3 p-2">
+              <img
+                src="./assets/images/Software_house.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-lg-6 col-md-5 col-12">
+              <div class="card-body p-md-3 p-2">
+                <h2 class="card-title d-inline-block me-3">Product Designer</h2>
+                <div class="btn closed py-1 d-inline-block mb-2">closed</div>
+                <p class="card-text">
+                  <i class="fa-solid fa-location-dot me-2"></i>Giza, haram
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <div
+                class="card-body d-flex flex-column col text-md-end text-start"
+              >
+                <div
+                  class="col-lg-12 order-md-1 order-2 d-md-block d-flex flex-sm-nowrap flex-wrap align-items-center"
+                >
+                  <h3 class="px-1">4000 - 6000 K</h3>
+                  <h6 class="px-1">Applied 2 weeks ago</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                (click)="showSummary()"
+                class="btn col-12 card-footer text-center"
+              >
+                View Application
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================== -->
+<!-- ===== Job Summary ==== -->
+<div id="summary" *ngIf="summary">
+  <div class="layout py-5">
+    <div class="user-summary container col-lg-6 col-md-8 col-11 px-0 rounded-3">
+      <h2 class="mb-3 rounded-3 py-3 fw-bold px-4">
+        <button
+          id="exit"
+          (click)="hideSummary()"
+          class="btn me-2 exit float-end fw-semibold py-2 px-5"
+        >
+          Exit
+        </button>
+        <span>Preview</span>
+      </h2>
+
+      <div class="contact-info py-3 px-md-5 px-4">
+        <h5 class="fw-bold mb-3">Contact Information</h5>
+        <div class="row form-group">
+          <div class="col-md-6 mb-3">
+            <label>Full Name</label>
+            <span class="d-block form-control px-0 fw-bold"
+              >Zeyad.abdelazim</span
+            >
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Email</label>
+            <span class="d-block form-control px-0 fw-bold"
+              >Zeyad98@gmail.com</span
+            >
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Phone Number</label>
+            <span class="d-block form-control px-0 fw-bold">011387339292</span>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Gender</label>
+            <span class="d-block form-control px-0 fw-bold">Male</span>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>City</label>
+            <span class="d-block form-control px-0 fw-bold">Giza</span>
+          </div>
+          <!-- <div class="col-md-6 mb-3">
+            <label>Area</label>
+            <span class="d-block form-control px-0 fw-bold">Haram</span>
+          </div> -->
+        </div>
+        <h5 class="fw-bold mb-3">Application Details</h5>
+        <div class="row form-group">
+          <div class="col-12 mb-3">
+            <label>Cv</label>
+            <span class="d-block form-control px-0 fw-bold"
+              >Zeyad abdelazim CV.pdf</span
+            >
+          </div>
+        </div>
+        <h5 class="fw-bold mb-3">Question answer</h5>
+        <div class="row form-group">
+          <div class="col-12 mb-3">
+            <label>what is you noticed period?</label>
+            <span class="d-block form-control px-0 fw-bold">2 weeks</span>
+          </div>
+          <div class="col-12 mb-3">
+            <label
+              >What is your current monthly salary in local currency?</label
+            >
+            <span class="d-block form-control px-0 fw-bold">20000</span>
+          </div>
+          <div class="col-12 mb-3">
+            <label>what is you noticed period?</label>
+            <span class="d-block form-control px-0 fw-bold"
+              >Ensure accuracy, completeness, and compliance of financial
+              data.</span
+            >
+          </div>
+          <div class="col-12 mb-3">
+            <label>what is you noticed period?</label>
+            <span class="d-block form-control px-0 fw-bold"
+              >Ensure accuracy, completeness, and compliance of financial
+              data.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===== End Job Summary ==== -->
+<app-footer></app-footer>
