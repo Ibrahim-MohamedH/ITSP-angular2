@@ -1,0 +1,32 @@
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.924); /* Slightly darker background */
+  z-index: 543345678;
+  display: flex;
+  justify-content: center; /* Centering loader horizontally */
+  align-items: center; /* Centering loader vertically */
+}
+
+.preloader .loader {
+  width: 80px; /* Slightly smaller for a sleeker look */
+  height: 80px;
+  background-color: transparent;
+  border: 10px solid rgba(255, 255, 255, 0.2); /* Lighter border */
+  border-top: 10px solid #fff; /* Solid top border for visibility */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.748); /* Adding glow effect */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees */
+  }
+}

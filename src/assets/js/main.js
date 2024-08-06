@@ -39,3 +39,15 @@
 //     behavior: "smooth",
 //   });
 // });
+
+
+let loader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  this.window.setTimeout(function () {
+    loader.style.display = 'none';
+  }, 2000)
+
+});
+
+

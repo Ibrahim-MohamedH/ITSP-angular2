@@ -16,7 +16,7 @@
   font-family: var(--font-family);
 }
 #hero {
-  background-image: url(../images/homeHero-rtl.webp);
+  background-image: url(../images/homeHero-rtl.jpg);
   background-position: center left;
 }
 #hero .container-fluid {
