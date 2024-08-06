@@ -71,13 +71,10 @@ section {
 --------------------------------------------------------------*/
 #hero {
   background-image: url(../images/homeHero.jpg);
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
-  -webkit-background-position: center right;
   position: relative;
   overflow-y: hidden;
   min-height: 80vh;
