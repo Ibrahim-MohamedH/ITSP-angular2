@@ -4,6 +4,7 @@ import SwiperCore, { SwiperOptions, Autoplay, Navigation } from 'swiper';
 import * as AOS from 'aos'; // Import AOS
 
 import { Meta } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 SwiperCore.use([Navigation, Autoplay]);
 @Component({
   selector: 'app-about-us',
@@ -11,7 +12,14 @@ SwiperCore.use([Navigation, Autoplay]);
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent {
-  constructor(private route: ActivatedRoute, private meta: Meta) {}
+  currentLang: string;
+  constructor(
+    private route: ActivatedRoute,
+    private meta: Meta,
+    private translateService: TranslateService
+  ) {
+    this.currentLang = this.translateService.currentLang || 'en';
+  }
   // ========= Swipper Angular =========
   chooseUs: SwiperOptions = {
     modules: [Navigation, Autoplay],

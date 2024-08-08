@@ -2,11 +2,20 @@
 # navbar
 --------------------------------------------------------------*/
 .top-bar {
-  background-color: var(--black);
+  /* background-color: var(--black); */
   color: var(--font-main);
 }
+header {
+  z-index: 99999999999999999999999999999999999999999999999999978;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
 nav {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.6); */
 }
 nav .navbar-toggler {
   border: none;
@@ -19,16 +28,16 @@ nav .navbar-toggler i {
 }
 nav .navbar-nav .nav-link,
 nav .navbar-nav .nav-link.show {
-  color: var(--black);
+  color: rgba(255, 255, 255, 0.8);
   box-shadow: none;
   font-size: 20px;
   font-weight: 600;
 }
 nav .navbar-nav .nav-link:hover {
-  color: #652d90;
+  color: var(--new-gold);
 }
 nav .navbar-nav .nav-link.active {
-  color: #652d90;
+  color: var(--new-gold);
 }
 nav .navbar-nav .nav-item .dropdown-menu.show {
   background-color: var(--black);

@@ -27,7 +27,7 @@
       "link": "Get in touch"
     },
     "solutions": {
-      "title": "OUR SOLUTIONS CATEGORY",
+      "title": "OUR SOLUTIONS",
       "description": "Expand your horizons with our software and marketing solutions. No boders, just boundless creativity, compliance, and cultural resonance to amplify your message globally and authentically",
       "software-card": {
         "title": "Software House",
@@ -45,7 +45,7 @@
     },
     "world": {
       "title": "We code & connect you with the world.",
-      "description": "BEYOND BORDERS, BEYOND LIMITS: CONNECTING THE WORLD THROUGH SOFTWARE & DIGITAL MARKETING!THE WORLD IS OUR CANVAS, AND LANGUAGES ARE OUR COLORS. WE'RE NOT JUST A SOFTWARE AND DIGITALMARKETING COMPANY; WE'RE GLOBAL ARCHITECTS, BUILDING BRIDGES ACROSS CULTURES AND CONTINENTS."
+      "description": "Beyond borders, beyond limits: connecting the world through software & digital marketing! the world is our canvas, and languages are our colors. We're not just a software and digitalmarketing company; we're globale architects, building bridges across cultures and continents."
     }
   },
   "footer": {
@@ -203,7 +203,7 @@
   "software-house": {
     "softwareHouseHero": {
       "title": "Software House",
-      "description": "We “potential”, “Empower” and “Cultivate” your business with our transformative Software Solutions."
+      "description": "We “Potential”, “Empower” and “Cultivate” your business with our transformative Software Solutions."
     },
     "softwareHouse": {
       "card1": {
@@ -312,7 +312,7 @@
     }
   },
   "JobCategory": {
-    "title": "Career",
+    "title": "Careers",
     "description": "Push boundaries, unlock potential. Career growth starts here!",
     "software-card": {
       "title": "Software House",

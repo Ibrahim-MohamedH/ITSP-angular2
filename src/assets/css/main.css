@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "DaggerSquare";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DaggerSquar/DAGGERSQUARE_OBLIQUE.otf") format("opentype");
+}
+
 /* @font-face {
   font-family: "Lato";
   font-style: normal;
@@ -261,6 +268,9 @@ section {
 
 #aboutCard-7 > .container .col-12 .row {
   min-height: 88px;
+}
+#aboutCard-7 .dreamTeam-item {
+  width: calc(100% / 7);
 }
 
 /*--------------------------------------------------------------
@@ -1301,6 +1311,9 @@ footer hr {
     height: auto !important;
     overflow-y: auto;
   }
+  #aboutCard-7 .dreamTeam-item {
+    width: calc(100% / 4);
+  }
 }
 @media (max-width: 768px) {
   #jobResults #software,
@@ -1335,6 +1348,9 @@ footer hr {
   }
   #DigitalMarketingHouseCard2 .container-fluid {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+  #aboutCard-7 .dreamTeam-item {
+    width: calc(100% / 3);
   }
 }
 @media (max-width: 576px) {
@@ -1371,5 +1387,8 @@ footer hr {
   #aboutCard-4 .position-absolute p {
     font-size: 16px;
     margin-bottom: 0px;
+  }
+  #aboutCard-7 .dreamTeam-item {
+    width: calc(100% / 2);
   }
 }

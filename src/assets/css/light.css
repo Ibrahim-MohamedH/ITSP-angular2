@@ -562,6 +562,7 @@ nav .nav-item button.btn i {
 #DigitalMarketingHouse p {
   color: var(--font-main);
 }
+
 #Marketing-BusinessHouse .swiper-wrapper {
   align-items: center;
   min-height: 300px;
@@ -569,11 +570,11 @@ nav .nav-item button.btn i {
 #Marketing-BusinessHouse .swiper-slide {
   margin-top: 30px;
   margin-bottom: 30px;
-  filter: blur(1px);
   min-height: 300px;
   padding: 25px;
   perspective: 120px;
 }
+
 #Marketing-BusinessHouse .swiper-slide:not(.swiper-slide-active) .card {
   transition: rotateY 0.3s;
   background: linear-gradient(
@@ -603,9 +604,8 @@ nav .nav-item button.btn i {
     rgba(0, 0, 0, 0) 0%,
     rgba(255, 255, 255, 0.6) 100%
   );
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   border-radius: 10px;
-  filter: blur(0px);
 }
 #Marketing-BusinessHouse .swiper-slide-active h2,
 #Marketing-BusinessHouse .swiper-slide-active p {

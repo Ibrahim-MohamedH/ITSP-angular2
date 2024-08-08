@@ -53,6 +53,7 @@
   background-image: url(../../../../assets/images/aboutCard-5.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow-y: hidden;
 }
 #aboutCard-5 .card {
   background: rgba(0, 0, 0, 0.8);
@@ -72,5 +73,5 @@
 #aboutCard-7 {
   background-image: url(../../../../assets/images/aboutCard-7.webp);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }

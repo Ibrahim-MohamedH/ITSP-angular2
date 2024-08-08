@@ -1,29 +1,26 @@
 <app-navbar></app-navbar>
 <section id="MarketingBusinessHero">
-  <div class="container-fluid py-5">
-    <div class="py-5">
-      <div class="py-lg-5">
+  <div class="container-xl py-5">
+    <div class="pt-5">
+      <div class="py-5">
         <div class="py-lg-5">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 py-lg-5">
-              <h1 class="pb-2 display-4 animate__animated animate__bounceIn">
-                {{ "marketing-house.MarketingBusinessHero.title" | translate }}
-              </h1>
-              <p
-                class="pb-5 fs-3 col-md-8 col-sm-10 col-12 fw-bold animate__animated animate__fadeInUp"
-              >
-                {{
-                  "marketing-house.MarketingBusinessHero.description"
-                    | translate
-                }}
-              </p>
-              <a
-                routerLink="/contact"
-                class="btn gradient-border fs-2 py-2 px-5"
-                >{{
-                  "marketing-house.MarketingBusinessHero.link" | translate
-                }}</a
-              >
+          <div class="py-lg-5">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 py-lg-5">
+                <h1 class="pb-2 display-4 animate__animated animate__bounceIn">
+                  {{
+                    "marketing-house.MarketingBusinessHero.title" | translate
+                  }}
+                </h1>
+                <p
+                  class="pb-5 fs-3 col-md-8 col-sm-10 col-12 fw-bold animate__animated animate__fadeInUp"
+                >
+                  {{
+                    "marketing-house.MarketingBusinessHero.description"
+                      | translate
+                  }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -32,7 +29,7 @@
   </div>
 </section>
 <section id="Marketing-BusinessHouse" class="py-5">
-  <div class="container-fluid px-lg-5 py-5">
+  <div class="container-fluid px-0 py-5">
     <div class="py-lg-5">
       <div class="py-lg-5">
         <swiper [config]="hero">

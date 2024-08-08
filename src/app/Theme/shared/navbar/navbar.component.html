@@ -1,4 +1,4 @@
-<header>
+<header class="position-fixed w-100">
   <div class="top-bar">
     <div class="container">
       <div class="row align-items-center">
@@ -31,7 +31,7 @@
     <div class="container px-xl-2 px-lg-1 px-2">
       <a class="navbar-brand fw-bold" routerLink="/{{ currentLang }}">
         <img
-          src="../../../../assets/images/ITSP_logo_black.png"
+          src="../../../../assets/images/ITSP_logo.svg"
           width="100"
           alt="ITSP Company Logo"
         />
@@ -58,7 +58,6 @@
               routerLink="/{{ currentLang }}/home"
               >{{ "navbar.home" | translate }}</a
             >
-
           </li>
           <li class="nav-item me-2 dropdown mb-lg-0 mb-2">
             <a

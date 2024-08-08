@@ -8,412 +8,416 @@
 </div>
 <div id="apply">
   <div class="layout py-5">
-    <form
-      class="container col-md-8 pb-4 px-0"
-      [formGroup]="applicationForm"
-      (ngSubmit)="onSubmit()"
-    >
-      <h2 class="fw-bold mb-3 rounded-3 py-3 fw-normal mb-0 ps-md-5 ps-3">
-        <span>{{ "apply.title" | translate }}</span>
-      </h2>
-      <div class="form-info px-md-5 px-2">
-        <div class="px-md-5">
-          <div class="row mb-3">
-            <div class="form-group mb-3 col-md-6">
-              <label for="first_name" class="form-label"
-                >{{ "apply.First name" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                id="first_name"
-                formControlName="first_name"
-                name="first_name"
-                required
-                [placeholder]="'apply.First name' | translate"
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['first_name'].invalid &&
-                  (applicationForm.controls['first_name'].dirty ||
-                    applicationForm.controls['first_name'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['first_name'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
+    <div class="pt-5">
+      <div class="pt-5">
+        <form
+          class="container col-md-8 pb-4 px-0"
+          [formGroup]="applicationForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <h2 class="fw-bold mb-3 rounded-3 py-3 fw-normal mb-0 ps-md-5 ps-3">
+            <span>{{ "apply.title" | translate }}</span>
+          </h2>
+          <div class="form-info px-md-5 px-2">
+            <div class="px-md-5">
+              <div class="row mb-3">
+                <div class="form-group mb-3 col-md-6">
+                  <label for="first_name" class="form-label"
+                    >{{ "apply.First name" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="first_name"
+                    formControlName="first_name"
+                    name="first_name"
+                    required
+                    [placeholder]="'apply.First name' | translate"
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['first_name'].invalid &&
+                      (applicationForm.controls['first_name'].dirty ||
+                        applicationForm.controls['first_name'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['first_name'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['first_name'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['first_name'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['first_name'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['first_name'].errors?.['serverError'][0]}}
+                <div class="form-group mb-3 col-md-6">
+                  <label for="last_name" class="form-label"
+                    >{{ "apply.Last name" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="last_name"
+                    formControlName="last_name"
+                    name="last_name"
+                    required
+                    [placeholder]="'apply.Last name' | translate"
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['last_name'].invalid &&
+                      (applicationForm.controls['last_name'].dirty ||
+                        applicationForm.controls['last_name'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['last_name'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['last_name'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['last_name'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="email" class="form-label"
+                    >{{ "apply.E-mail" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    [style]="currentLang == 'ar' ? 'text-align: end' : ''"
+                    type="email"
+                    class="form-control form-control-lg"
+                    formControlName="email"
+                    id="email"
+                    name="email"
+                    required
+                    [placeholder]="'apply.mailPlaceholder' | translate"
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['email'].invalid &&
+                      (applicationForm.controls['email'].dirty ||
+                        applicationForm.controls['email'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['email'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['email'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['email'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="phone" class="form-label"
+                    >{{ "apply.Phone" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    formControlName="phone"
+                    id="phone"
+                    name="phone"
+                    required
+                    [placeholder]="'apply.Phone' | translate"
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['phone'].invalid &&
+                      (applicationForm.controls['phone'].dirty ||
+                        applicationForm.controls['phone'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['phone'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['phone'].errors?.['invalidPhoneNumber']"
+                    >
+                      {{ "apply.phoneValidation" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['phone'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['phone'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="city_id" class="form-label"
+                    >{{ "apply.City" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <select
+                    class="form-select form-select-lg"
+                    formControlName="city_id"
+                    id="city_id"
+                    name="city_id"
+                    required
+                  >
+                    <option *ngFor="let city of cities" [value]="city.id">
+                      {{ city.city }}
+                    </option>
+                  </select>
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['city_id'].invalid &&
+                      (applicationForm.controls['city_id'].dirty ||
+                        applicationForm.controls['city_id'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['city_id'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['city_id'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['city_id'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="area" class="form-label"
+                    >{{ "apply.Area" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    formControlName="area"
+                    id="area"
+                    name="area"
+                    required
+                    [placeholder]="'apply.Area' | translate"
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['area'].invalid &&
+                      (applicationForm.controls['area'].dirty ||
+                        applicationForm.controls['area'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['area'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['area'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['area'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="birthday" class="form-label"
+                    >{{ "apply.Birthday" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <input
+                    type="date"
+                    class="form-control form-control-lg"
+                    formControlName="birthday"
+                    id="birthday"
+                    name="birthday"
+                    required
+                  />
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['birthday'].invalid &&
+                      (applicationForm.controls['birthday'].dirty ||
+                        applicationForm.controls['birthday'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['birthday'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['birthday'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['birthday'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label for="gender" class="form-label"
+                    >{{ "apply.Gender" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <select
+                    required
+                    name="gender"
+                    id="gender"
+                    class="form-select form-select-lg"
+                    formControlName="gender"
+                  >
+                    <option disabled selected>Choose...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['gender'].invalid &&
+                      (applicationForm.controls['gender'].dirty ||
+                        applicationForm.controls['gender'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['gender'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['gender'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['gender'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label class="form-label"
+                    >{{ "apply.Image" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <div class="input-group">
+                    <label for="image" class="input-group-text">{{
+                      "apply.Upload" | translate
+                    }}</label>
+                    <input
+                      type="file"
+                      id="image"
+                      name="image"
+                      required
+                      (change)="onimageChange($event)"
+                      class="form-control form-control-lg"
+                      #imageInput
+                    />
+                  </div>
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['image'].invalid &&
+                      (applicationForm.controls['image'].dirty ||
+                        applicationForm.controls['image'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['image'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['image'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['image'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-3 col-md-6">
+                  <label class="form-label"
+                    >{{ "apply.CV" | translate
+                    }}<span class="ms-error">*</span></label
+                  >
+                  <div class="input-group">
+                    <label for="cv" class="input-group-text">{{
+                      "apply.Upload" | translate
+                    }}</label>
+                    <input
+                      type="file"
+                      id="cv"
+                      name="cv"
+                      (change)="onCvChange($event)"
+                      class="form-control form-control-lg"
+                      required
+                      #cvInput
+                    />
+                  </div>
+                  <div class="ms-error" *ngIf="cvError">{{ cvError }}</div>
+                  <div
+                    class="ms-error"
+                    *ngIf="
+                      applicationForm.controls['cv'].invalid &&
+                      (applicationForm.controls['cv'].dirty ||
+                        applicationForm.controls['cv'].touched)
+                    "
+                  >
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['cv'].errors?.['required']"
+                    >
+                      {{ "apply.required" | translate }}
+                    </div>
+                    <div
+                      class="ms-error"
+                      *ngIf="applicationForm.controls['cv'].errors?.['serverError']"
+                    >
+                      {{applicationForm.controls['cv'].errors?.['serverError'][0]}}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="last_name" class="form-label"
-                >{{ "apply.Last name" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                id="last_name"
-                formControlName="last_name"
-                name="last_name"
-                required
-                [placeholder]="'apply.Last name' | translate"
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['last_name'].invalid &&
-                  (applicationForm.controls['last_name'].dirty ||
-                    applicationForm.controls['last_name'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['last_name'].errors?.['required']"
+              <div class="form-group text-center">
+                <button
+                  [disabled]="!applicationForm.valid"
+                  class="btn py-2 col-12"
+                  type="submit"
                 >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['last_name'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['last_name'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="email" class="form-label"
-                >{{ "apply.E-mail" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                [style]="currentLang == 'ar' ? 'text-align: end' : ''"
-                type="email"
-                class="form-control form-control-lg"
-                formControlName="email"
-                id="email"
-                name="email"
-                required
-                [placeholder]="'apply.mailPlaceholder' | translate"
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['email'].invalid &&
-                  (applicationForm.controls['email'].dirty ||
-                    applicationForm.controls['email'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['email'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['email'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['email'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="phone" class="form-label"
-                >{{ "apply.Phone" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                formControlName="phone"
-                id="phone"
-                name="phone"
-                required
-                [placeholder]="'apply.Phone' | translate"
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['phone'].invalid &&
-                  (applicationForm.controls['phone'].dirty ||
-                    applicationForm.controls['phone'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['phone'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['phone'].errors?.['invalidPhoneNumber']"
-                >
-                  {{ "apply.phoneValidation" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['phone'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['phone'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="city_id" class="form-label"
-                >{{ "apply.City" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <select
-                class="form-select form-select-lg"
-                formControlName="city_id"
-                id="city_id"
-                name="city_id"
-                required
-              >
-                <option *ngFor="let city of cities" [value]="city.id">
-                  {{ city.city }}
-                </option>
-              </select>
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['city_id'].invalid &&
-                  (applicationForm.controls['city_id'].dirty ||
-                    applicationForm.controls['city_id'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['city_id'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['city_id'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['city_id'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="area" class="form-label"
-                >{{ "apply.Area" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                formControlName="area"
-                id="area"
-                name="area"
-                required
-                [placeholder]="'apply.Area' | translate"
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['area'].invalid &&
-                  (applicationForm.controls['area'].dirty ||
-                    applicationForm.controls['area'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['area'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['area'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['area'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="birthday" class="form-label"
-                >{{ "apply.Birthday" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <input
-                type="date"
-                class="form-control form-control-lg"
-                formControlName="birthday"
-                id="birthday"
-                name="birthday"
-                required
-              />
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['birthday'].invalid &&
-                  (applicationForm.controls['birthday'].dirty ||
-                    applicationForm.controls['birthday'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['birthday'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['birthday'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['birthday'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label for="gender" class="form-label"
-                >{{ "apply.Gender" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <select
-                required
-                name="gender"
-                id="gender"
-                class="form-select form-select-lg"
-                formControlName="gender"
-              >
-                <option disabled selected>Choose...</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['gender'].invalid &&
-                  (applicationForm.controls['gender'].dirty ||
-                    applicationForm.controls['gender'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['gender'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['gender'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['gender'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label class="form-label"
-                >{{ "apply.Image" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <div class="input-group">
-                <label for="image" class="input-group-text">{{
-                  "apply.Upload" | translate
-                }}</label>
-                <input
-                  type="file"
-                  id="image"
-                  name="image"
-                  required
-                  (change)="onimageChange($event)"
-                  class="form-control form-control-lg"
-                  #imageInput
-                />
-              </div>
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['image'].invalid &&
-                  (applicationForm.controls['image'].dirty ||
-                    applicationForm.controls['image'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['image'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['image'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['image'].errors?.['serverError'][0]}}
-                </div>
-              </div>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <label class="form-label"
-                >{{ "apply.CV" | translate
-                }}<span class="ms-error">*</span></label
-              >
-              <div class="input-group">
-                <label for="cv" class="input-group-text">{{
-                  "apply.Upload" | translate
-                }}</label>
-                <input
-                  type="file"
-                  id="cv"
-                  name="cv"
-                  (change)="onCvChange($event)"
-                  class="form-control form-control-lg"
-                  required
-                  #cvInput
-                />
-              </div>
-              <div class="ms-error" *ngIf="cvError">{{ cvError }}</div>
-              <div
-                class="ms-error"
-                *ngIf="
-                  applicationForm.controls['cv'].invalid &&
-                  (applicationForm.controls['cv'].dirty ||
-                    applicationForm.controls['cv'].touched)
-                "
-              >
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['cv'].errors?.['required']"
-                >
-                  {{ "apply.required" | translate }}
-                </div>
-                <div
-                  class="ms-error"
-                  *ngIf="applicationForm.controls['cv'].errors?.['serverError']"
-                >
-                  {{applicationForm.controls['cv'].errors?.['serverError'][0]}}
-                </div>
+                  <i class="fa-solid fa-circle-check me-2"></i
+                  >{{ "apply.Submit" | translate }}
+                </button>
               </div>
             </div>
           </div>
-          <div class="form-group text-center">
-            <button
-              [disabled]="!applicationForm.valid"
-              class="btn py-2 col-12"
-              type="submit"
-            >
-              <i class="fa-solid fa-circle-check me-2"></i
-              >{{ "apply.Submit" | translate }}
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
 </div>
 <div class="thank-message" *ngIf="thankYouMessage">

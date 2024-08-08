@@ -6,61 +6,75 @@
     </div>
   </div>
 </div>
-<section id="jobDetails" class="">
+<section id="jobDetails">
   <div class="container-fluid py-5">
-    <div class="container py-5">
-      <h2 class="fw-semibold placeholder-glow">
-        <a
-          routerLink="/{{ currentLang }}/jobs/{{ job.categories_id }}"
-          class="btn"
-          ><i class="fa-solid fa-chevron-left" *ngIf="currentLang == 'en'"></i>
-          <i class="fa-solid fa-chevron-right" *ngIf="currentLang == 'ar'"></i
-        ></a>
-        {{ job.postion }}
-        <span
-          class="col-lg-6 col-md-7 col-12 placeholder ms-md-3"
-          *ngIf="loader"
-        ></span>
-      </h2>
-      <!-- <p>
-        {{ job.discription }}
-      </p> -->
-      <div class="row mb-3">
-        <div
-          class="col-xxl-1 col-lg-2 col-md-3 fw-medium mb-lg-0 mb-3 placeholder-glow"
-        >
-          <i class="fa-solid fa-bag-shopping me-2"></i>
-          {{ levels[job.job_level] }}
-          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
+    <div class="pt-5">
+      <div class="container py-5">
+        <h2 class="fw-semibold placeholder-glow">
+          <a
+            routerLink="/{{ currentLang }}/jobs/{{ job.categories_id }}"
+            class="btn"
+            ><i
+              class="fa-solid fa-chevron-left"
+              *ngIf="currentLang == 'en'"
+            ></i>
+            <i class="fa-solid fa-chevron-right" *ngIf="currentLang == 'ar'"></i
+          ></a>
+          {{ job.postion }}
+          <span
+            class="col-lg-6 col-md-7 col-12 placeholder ms-md-3"
+            *ngIf="loader"
+          ></span>
+        </h2>
+        <!-- <p>
+          {{ job.discription }}
+        </p> -->
+        <div class="row mb-3">
+          <div
+            class="col-xxl-1 col-lg-2 col-md-3 fw-medium mb-lg-0 mb-3 placeholder-glow"
+          >
+            <i class="fa-solid fa-bag-shopping me-2"></i>
+            {{ levels[job.job_level] }}
+            <span
+              class="col-6 d-inline-block placeholder"
+              *ngIf="loader"
+            ></span>
+          </div>
+          <div
+            class="col-xxl-1 col-lg-2 px-lg-0 col-md-9 fw-medium mb-lg-0 mb-3 placeholder-glow"
+          >
+            <i class="fa-regular fa-clock me-2"></i> {{ types[job.job_type] }}
+            <span
+              class="col-6 d-inline-block placeholder"
+              *ngIf="loader"
+            ></span>
+          </div>
+          <div
+            class="col-xxl-1 col-lg-2 col-md-3 pe-lg-0 fw-medium mb-lg-0 mb-3 placeholder-glow"
+          >
+            <i class="fa-regular fa-building me-2"></i>
+            {{ places[job.job_place] }}
+            <span
+              class="col-6 d-inline-block placeholder"
+              *ngIf="loader"
+            ></span>
+          </div>
+          <!-- <div class="col-xl-3 col-lg-3 col-md-9 fw-medium mb-lg-0 mb-3">
+            <i class="fa-solid fa-graduation-cap me-2"></i>
+            Computer Science
+          </div> -->
         </div>
-        <div
-          class="col-xxl-1 col-lg-2 px-lg-0 col-md-9 fw-medium mb-lg-0 mb-3 placeholder-glow"
-        >
-          <i class="fa-regular fa-clock me-2"></i> {{ types[job.job_type] }}
-          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
-        </div>
-        <div
-          class="col-xxl-1 col-lg-2 col-md-3 pe-lg-0 fw-medium mb-lg-0 mb-3 placeholder-glow"
-        >
-          <i class="fa-regular fa-building me-2"></i>
-          {{ places[job.job_place] }}
-          <span class="col-6 d-inline-block placeholder" *ngIf="loader"></span>
-        </div>
-        <!-- <div class="col-xl-3 col-lg-3 col-md-9 fw-medium mb-lg-0 mb-3">
-          <i class="fa-solid fa-graduation-cap me-2"></i>
-          Computer Science
-        </div> -->
-      </div>
-      <h3 class="fw-semibold placeholder-glow">
-        {{ "JobDetails.Salary range" | translate }}: E£ {{ job.range_salary }}
-        <span
-          class="col-lg-2 col-md-4 col-6 d-inline-block placeholder"
-          *ngIf="loader"
-        ></span>
-      </h3>
-      <!-- <h3 class="fw-semibold">
+        <h3 class="fw-semibold placeholder-glow">
+          {{ "JobDetails.Salary range" | translate }}: E£ {{ job.range_salary }}
+          <span
+            class="col-lg-2 col-md-4 col-6 d-inline-block placeholder"
+            *ngIf="loader"
+          ></span>
+        </h3>
+        <!-- <h3 class="fw-semibold">
 
-      </h3> -->
+        </h3> -->
+      </div>
     </div>
   </div>
 </section>

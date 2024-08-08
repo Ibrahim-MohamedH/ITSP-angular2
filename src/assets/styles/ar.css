@@ -221,20 +221,28 @@ footer a:before {
   background-size: 100% 100%;
   border: none;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 #aboutCard-4 .card {
   background: linear-gradient(
     -90deg,
     rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.7) 70%,
+    rgba(0, 0, 0, 0.7) 50%,
     rgba(236, 214, 97, 0.7) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border: none;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 #softwareHouse img {
   filter: drop-shadow(8px 0px 5px var(--new-gold));
